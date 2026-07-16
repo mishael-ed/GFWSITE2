@@ -35,7 +35,7 @@ function SanctuaryPage() {
         </div>
       </div>
 
-      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
         <h1 style={{ fontFamily: 'Skreeble', color: '#F69524', fontSize: '80px', margin: 0 }}>SANCTUARY</h1>
 
         <p style={paragraphStyle}>
