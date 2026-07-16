@@ -1,0 +1,24 @@
+import { Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import SanctuaryPage from './SanctuaryPage'
+import InitiativesPage from './InitiativesPage'
+import EducationPage from './EducationPage'
+import AboutPage from './AboutPage'
+import CustomCursor from './CustomCursor'
+
+function App() {
+  return (
+    <>
+      <CustomCursor />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sanctuary" element={<SanctuaryPage />} />
+        <Route path="/initiatives" element={<InitiativesPage />} />
+        <Route path="/education" element={<EducationPage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </>
+  )
+}
+
+export default App
