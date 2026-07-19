@@ -7,24 +7,24 @@ function PortfolioCard({ title, image }) {
   const clipId = useId()
 
   return (
-    <div style={{ position: 'relative', width: '320px', height: '400px' }}>
+    <div style={{ position: 'relative', width: '100%', height: '200px' }}>
       <svg
         width="100%"
         height="100%"
         viewBox="0 0 320 400"
-        preserveAspectRatio="none"
+        preserveAspectRatio="xMidYMid slice"
         style={{ position: 'absolute', top: '10px', left: 0 }}
       >
         <path d={CARD_PATH} fill="#000000" />
       </svg>
 
-      <svg width="100%" height="100%" viewBox="0 0 320 400" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: 0 }}>
+      <svg width="100%" height="100%" viewBox="0 0 320 400" preserveAspectRatio="xMidYMid slice" style={{ position: 'absolute', top: 0, left: 0 }}>
         <defs>
           <clipPath id={clipId}>
             <path d={CARD_PATH} />
           </clipPath>
         </defs>
-        <image href={image} x="0" y="0" width="320" height="400" preserveAspectRatio="xMidYMid slice" clipPath={`url(#${clipId})`} />
+        <image href={image} x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clipPath={`url(#${clipId})`} />
         <path d={CARD_PATH} fill="rgba(0,0,0,0.7)" />
       </svg>
 

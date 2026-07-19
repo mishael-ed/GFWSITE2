@@ -17,7 +17,7 @@ function PortfolioPage() {
           <h1 style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: '110px', margin: 0 }}>PORTFOLIO</h1>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '60px', padding: '40px 80px 140px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', padding: '40px 60px 140px', width: '100%', boxSizing: 'border-box' }}>
           <PortfolioCard
             title="Nigerian Wildlife Awareness Campaign"
             image="https://upload.wikimedia.org/wikipedia/commons/7/7b/Sumu_wildlife_park_3.jpg"
