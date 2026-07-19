@@ -18,14 +18,15 @@ const paragraphStyle = {
 
 function AboutPage() {
   return (
-    <div style={{ width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
-      <div style={{ paddingBottom: '20px' }}>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-          <Nav />
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
+      <div style={{ flex: 1 }}>
+        <div style={{ paddingBottom: '20px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+            <Nav />
+          </div>
         </div>
-      </div>
 
-      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
         <h1 style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: '80px', margin: 0 }}>ABOUT US</h1>
 
         <h2 style={headingStyle}>Background</h2>
@@ -48,6 +49,7 @@ function AboutPage() {
         <p style={paragraphStyle}>
           We believe that every action matters. By choosing to act instead of standing by, we have seen how small efforts can grow into lasting impact. Together with our partners, supporters, and volunteers, we continue to prove that when people come together for nature, meaningful change is possible.
         </p>
+        </div>
       </div>
 
       <Footer />

@@ -4,6 +4,7 @@ import SanctuaryPage from './SanctuaryPage'
 import InitiativesPage from './InitiativesPage'
 import EducationPage from './EducationPage'
 import AboutPage from './AboutPage'
+import PortfolioPage from './PortfolioPage'
 import CustomCursor from './CustomCursor'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/initiatives" element={<InitiativesPage />} />
         <Route path="/education" element={<EducationPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
       </Routes>
     </>
   )

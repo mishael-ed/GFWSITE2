@@ -18,14 +18,15 @@ const paragraphStyle = {
 
 function EducationPage() {
   return (
-    <div style={{ width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
-      <div style={{ paddingBottom: '20px' }}>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-          <Nav />
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
+      <div style={{ flex: 1 }}>
+        <div style={{ paddingBottom: '20px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+            <Nav />
+          </div>
         </div>
-      </div>
 
-      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
         <h1 style={{ fontFamily: 'Skreeble', color: '#F69524', fontSize: '80px', margin: 0 }}>EDUCATION</h1>
 
         <p style={paragraphStyle}>
@@ -65,6 +66,7 @@ function EducationPage() {
         <p style={paragraphStyle}>
           Every educational experience is designed to nurture curiosity, encourage critical thinking, and inspire action. By engaging children, students, educators, and families, we are helping build a future where people understand, value, and actively protect Nigeria's extraordinary wildlife and natural heritage.
         </p>
+        </div>
       </div>
 
       <Footer />
