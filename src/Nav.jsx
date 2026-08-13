@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import birdInHandLogo from './assets/bird in hand ring logo.png'
+import menuIcon from './assets/abstracts/39Artboard 8menu .png'
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -36,9 +37,7 @@ function Nav() {
           aria-controls="main-navigation"
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span />
-          <span />
-          <span />
+          <img className="menu-icon" src={menuIcon} alt="" aria-hidden="true" />
         </button>
       </div>
 

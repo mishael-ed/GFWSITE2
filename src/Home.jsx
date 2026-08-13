@@ -12,25 +12,21 @@ function Home() {
   return (
     <div className="home-page" style={{ display: 'flex', flexDirection: 'column', width: '100%', minHeight: '300vh', overflowX: 'hidden' }}>
       <div style={{ backgroundColor: '#FDF8DF' }}>
-        <Reveal>
-          <Nav />
-        </Reveal>
+        <Nav />
 
         <div className="home-hero" style={{ position: 'relative', maxWidth: '1300px', marginLeft: 'auto', marginRight: 'auto' }}>
           <Reveal>
             <div className="home-hero-title" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px', lineHeight: '0.75' }}>
-              <span style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>WELCOME TO</span>
+              <span className="hero-line hero-first-line" style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>
+                WELCOME TO
+                <img className="hero-decoration hero-star" src={star_shape} alt="" aria-hidden="true" />
+              </span>
               <span style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>GREENFINGERS WILDLIFE</span>
-              <span style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>INITIATIVE</span>
+              <span className="hero-line hero-last-line" style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>
+                INITIATIVE
+                <img className="hero-decoration hero-shell" src={shell} alt="" aria-hidden="true" />
+              </span>
             </div>
-          </Reveal>
-
-          <Reveal style={{ position: 'absolute', top: '1px', left: '28%', width: '90px', height: '90px' }}>
-            <img src={star_shape} alt="" style={{ display: 'block', width: '100%', height: '100%' }} />
-          </Reveal>
-
-          <Reveal style={{ position: 'absolute', top: '140px', right: '31%', width: '90px', height: '90px' }}>
-            <img src={shell} alt="" style={{ display: 'block', width: '80%', height: '80%', transform: 'rotate(25deg)' }} />
           </Reveal>
         </div>
 
