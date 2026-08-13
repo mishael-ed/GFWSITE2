@@ -52,7 +52,7 @@ function Nav() {
               <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
               <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About Us</Link>
               <Link to="/portfolio" className="nav-link" onClick={() => setMenuOpen(false)}>Portfolio</Link>
-              <a href="#contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</a>
+              <Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link>
               <a href="#blogs" className="nav-link" onClick={() => setMenuOpen(false)}>Blogs</a>
             </div>
 
