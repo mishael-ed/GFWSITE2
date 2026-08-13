@@ -9,11 +9,13 @@ import DirectorPage from './DirectorPage'
 import ContactPage from './ContactPage'
 import PortfolioPage from './PortfolioPage'
 import CustomCursor from './CustomCursor'
+import SiteMotion from './SiteMotion'
 
 function App() {
   return (
     <>
       <CustomCursor />
+      <SiteMotion />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sanctuary" element={<SanctuaryPage />} />

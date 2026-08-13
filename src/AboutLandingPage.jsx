@@ -34,6 +34,7 @@ function AboutLandingPage() {
         </main>
 
         <div
+          className="safari-divider"
           style={{
             width: '100%',
             height: '500px',
