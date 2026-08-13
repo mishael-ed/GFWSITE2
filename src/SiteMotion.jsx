@@ -16,6 +16,8 @@ function SiteMotion() {
   const location = useLocation()
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
 
     let observer

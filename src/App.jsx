@@ -7,6 +7,7 @@ import AboutPage from './AboutPage'
 import AboutLandingPage from './AboutLandingPage'
 import DirectorPage from './DirectorPage'
 import ContactPage from './ContactPage'
+import BlogsPage from './BlogsPage'
 import PortfolioPage from './PortfolioPage'
 import CustomCursor from './CustomCursor'
 import SiteMotion from './SiteMotion'
@@ -25,6 +26,7 @@ function App() {
         <Route path="/about/organization" element={<AboutPage />} />
         <Route path="/about/director" element={<DirectorPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
       </Routes>
     </>
