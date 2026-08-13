@@ -53,13 +53,13 @@ function FreeformButton({ children, color = '#F69524', to }) {
 
   if (to) {
     return (
-      <Link to={to} style={style}>
+      <Link className="freeform-button" to={to} style={style}>
         {content}
       </Link>
     )
   }
 
-  return <button style={style}>{content}</button>
+  return <button className="freeform-button" style={style}>{content}</button>
 }
 
 export default FreeformButton

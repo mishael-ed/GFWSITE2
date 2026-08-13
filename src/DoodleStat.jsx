@@ -33,8 +33,8 @@ function DoodleStat({ number, label, style }) {
   }, [target])
 
   return (
-    <div ref={ref} style={{ textAlign: 'center', ...style }}>
-      <div style={{ fontFamily: 'Rainbow Theory', fontSize: '60px', color: '#F69524' }}>
+    <div className="doodle-stat" ref={ref} style={{ textAlign: 'center', ...style }}>
+      <div className="doodle-stat-number" style={{ fontFamily: 'Rainbow Theory', fontSize: '60px', color: '#F69524' }}>
         {count.toLocaleString()}
         {suffix}
       </div>

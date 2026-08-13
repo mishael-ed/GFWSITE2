@@ -22,14 +22,12 @@ function AboutPage() {
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
       <div style={{ flex: 1 }}>
         <div style={{ paddingBottom: '20px' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-            <Nav />
-          </div>
+          <Nav />
         </div>
 
-        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
+        <div className="content-page" style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
         <Link to="/about" style={{ display: 'inline-block', fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '15px', textDecoration: 'none', marginBottom: '28px' }}>← Explore About</Link>
-        <h1 style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: '80px', margin: 0 }}>ABOUT US</h1>
+        <h1 className="content-page-title" style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: '80px', margin: 0 }}>ABOUT US</h1>
 
         <h2 style={headingStyle}>Background</h2>
 

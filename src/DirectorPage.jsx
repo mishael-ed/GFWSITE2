@@ -19,7 +19,7 @@ function DirectorPage() {
           <Nav />
         </div>
 
-        <main style={{ maxWidth: '920px', margin: '0 auto', padding: '55px 30px 130px' }}>
+        <main className="director-content" style={{ maxWidth: '920px', margin: '0 auto', padding: '55px 30px 130px' }}>
           <Link to="/about" style={{ display: 'inline-block', fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '15px', textDecoration: 'none', marginBottom: '34px' }}>
             ← Explore About
           </Link>
@@ -36,7 +36,7 @@ function DirectorPage() {
             </p>
           </header>
 
-          <blockquote style={{ backgroundColor: '#242424', color: '#ffffff', fontFamily: 'Skreeble', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 1.25, margin: '0 0 42px', padding: '38px 42px', boxShadow: '0 9px 0 #F69524' }}>
+          <blockquote className="director-quote" style={{ backgroundColor: '#242424', color: '#ffffff', fontFamily: 'Skreeble', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 1.25, margin: '0 0 42px', padding: '38px 42px', boxShadow: '0 9px 0 #F69524' }}>
             “My name means ‘God leads me’ in Igbo, my native language, and in many ways, it reflects the unexpected path that led me to conservation.”
           </blockquote>
 

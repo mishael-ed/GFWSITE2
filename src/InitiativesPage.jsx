@@ -21,13 +21,11 @@ function InitiativesPage() {
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
       <div style={{ flex: 1 }}>
         <div style={{ paddingBottom: '20px' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-            <Nav />
-          </div>
+          <Nav />
         </div>
 
-        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
-        <h1 style={{ fontFamily: 'Skreeble', color: '#B2D235', fontSize: '80px', margin: 0 }}>OUR INITIATIVES</h1>
+        <div className="content-page" style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
+        <h1 className="content-page-title" style={{ fontFamily: 'Skreeble', color: '#B2D235', fontSize: '80px', margin: 0 }}>OUR INITIATIVES</h1>
 
         <p style={paragraphStyle}>
           At Greenfingers Wildlife Initiative, we believe conservation is most effective when it brings people together. Our initiatives are designed to educate, inspire, and empower individuals, schools, communities, businesses, and policymakers to take meaningful action for wildlife and the environment.

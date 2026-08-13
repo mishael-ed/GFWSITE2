@@ -1,7 +1,7 @@
 function PortfolioCard({ title, description, image }) {
   return (
     <article
-      className="portfolio-card"
+      className="portfolio-card feature-card"
       style={{
         position: 'relative',
         display: 'block',
@@ -12,6 +12,7 @@ function PortfolioCard({ title, description, image }) {
       }}
     >
       <div
+        className="feature-card-content"
         style={{
           position: 'absolute',
           inset: 0,
@@ -33,10 +34,10 @@ function PortfolioCard({ title, description, image }) {
           boxSizing: 'border-box',
         }}
       >
-        <h2 style={{ fontFamily: 'Skreeble', fontWeight: 'normal', fontSize: '45px', lineHeight: 1, margin: 0 }}>
+        <h2 className="feature-card-title" style={{ fontFamily: 'Skreeble', fontWeight: 'normal', fontSize: '45px', lineHeight: 1, margin: 0 }}>
           {title}
         </h2>
-        <p style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '16px', lineHeight: 1.5, maxWidth: '470px', margin: '15px 0 0' }}>
+        <p className="feature-card-description" style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '16px', lineHeight: 1.5, maxWidth: '470px', margin: '15px 0 0' }}>
           {description}
         </p>
       </div>

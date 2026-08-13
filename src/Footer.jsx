@@ -3,8 +3,9 @@ import logo from './assets/logo.png'
 function Footer() {
   return (
     <div>
-      <footer style={{ backgroundColor: '#242424', padding: '80px 0 40px' }}>
+      <footer id="contact" className="site-footer" style={{ backgroundColor: '#242424', padding: '80px 0 40px' }}>
         <div
+          className="footer-grid"
           style={{
             display: 'flex',
             justifyContent: 'space-between',
@@ -17,7 +18,7 @@ function Footer() {
             boxSizing: 'border-box',
           }}
         >
-          <img src={logo} alt="Green Fingers Wildlife Conservation Initiative" style={{ height: '70px' }} />
+          <img className="footer-logo" src={logo} alt="Green Fingers Wildlife Conservation Initiative" style={{ height: '70px' }} />
 
           <p
             style={{
@@ -34,7 +35,7 @@ function Footer() {
             We are a Non-Governmental Organization focused on Wildlife and Environmental Conservation.
           </p>
 
-          <div style={{ textAlign: 'left' }}>
+          <div className="footer-contact" style={{ textAlign: 'left' }}>
             <h3 style={{ fontFamily: 'Skreeble', color: '#F69524', fontSize: '46px', fontWeight: 'normal', margin: '0 0 16px' }}>Visit Us</h3>
 
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '14px', maxWidth: '300px' }}>

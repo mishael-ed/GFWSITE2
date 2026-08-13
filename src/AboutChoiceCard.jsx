@@ -4,7 +4,7 @@ function AboutChoiceCard({ title, description, image, to }) {
   return (
     <Link
       to={to}
-      className="about-choice-card"
+      className="about-choice-card feature-card"
       style={{
         position: 'relative',
         display: 'block',
@@ -16,6 +16,7 @@ function AboutChoiceCard({ title, description, image, to }) {
       }}
     >
       <div
+        className="feature-card-content"
         style={{
           position: 'absolute',
           inset: 0,
@@ -37,10 +38,10 @@ function AboutChoiceCard({ title, description, image, to }) {
           boxSizing: 'border-box',
         }}
       >
-        <h2 style={{ fontFamily: 'Skreeble', fontWeight: 'normal', fontSize: '45px', lineHeight: 1, margin: 0 }}>
+        <h2 className="feature-card-title" style={{ fontFamily: 'Skreeble', fontWeight: 'normal', fontSize: '45px', lineHeight: 1, margin: 0 }}>
           {title}
         </h2>
-        <p style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '16px', lineHeight: 1.5, maxWidth: '470px', margin: '15px 0 0' }}>
+        <p className="feature-card-description" style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '16px', lineHeight: 1.5, maxWidth: '470px', margin: '15px 0 0' }}>
           {description}
         </p>
       </div>

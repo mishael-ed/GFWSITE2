@@ -11,14 +11,14 @@ function AboutLandingPage() {
           <Nav />
         </div>
 
-        <header style={{ maxWidth: '900px', margin: '0 auto', padding: '60px 30px 0', textAlign: 'center' }}>
+        <header className="landing-header" style={{ maxWidth: '900px', margin: '0 auto', padding: '60px 30px 0', textAlign: 'center' }}>
           <h1 style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: 'clamp(70px, 10vw, 110px)', lineHeight: .9, margin: 0 }}>ABOUT</h1>
           <p style={{ fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '17px', lineHeight: 1.5, margin: '24px auto 0', maxWidth: '600px' }}>
             Discover the story behind Greenfingers Wildlife Initiative and meet the conservationist who founded it.
           </p>
         </header>
 
-        <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '38px', padding: '55px 30px 120px' }}>
+        <main className="card-list" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '38px', padding: '55px 30px 120px' }}>
           <AboutChoiceCard
             title="About Us"
             description="Learn about our beginnings, our purpose, and the work we do to protect Nigeria's wildlife."

@@ -31,13 +31,11 @@ function SanctuaryPage() {
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
       <div style={{ flex: 1 }}>
         <div style={{ paddingBottom: '20px' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-            <Nav />
-          </div>
+          <Nav />
         </div>
 
-        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
-        <h1 style={{ fontFamily: 'Skreeble', color: '#F69524', fontSize: '80px', margin: 0 }}>SANCTUARY</h1>
+        <div className="content-page" style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
+        <h1 className="content-page-title" style={{ fontFamily: 'Skreeble', color: '#F69524', fontSize: '80px', margin: 0 }}>SANCTUARY</h1>
 
         <p style={paragraphStyle}>
           Welcome to Greenfingers Wildlife Sanctuary—a safe haven where rescued wildlife finds hope, healing, and a second chance.
