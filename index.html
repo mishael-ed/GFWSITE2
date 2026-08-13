@@ -87,6 +87,23 @@
         color: #F69524;
       }
 
+      .about-choice-card,
+      .portfolio-card {
+        transform-origin: center;
+        transition: transform 0.2s ease;
+      }
+
+      .about-choice-card:hover,
+      .portfolio-card:hover {
+        transform: translateY(-10px) scale(1.035);
+      }
+
+      .about-choice-card:focus-visible {
+        transform: translateY(-10px) scale(1.035);
+        outline: 3px solid #000000;
+        outline-offset: 6px;
+      }
+
       @keyframes floatA {
         0%, 100% { transform: translate(0, 0) rotate(0deg); }
         50% { transform: translate(14px, -16px) rotate(4deg); }

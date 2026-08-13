@@ -1,13 +1,17 @@
-function PortfolioCard({ title, description, image }) {
+import { Link } from 'react-router-dom'
+
+function AboutChoiceCard({ title, description, image, to }) {
   return (
-    <article
-      className="portfolio-card"
+    <Link
+      to={to}
+      className="about-choice-card"
       style={{
         position: 'relative',
         display: 'block',
         width: 'min(680px, 100%)',
         height: '230px',
         color: '#ffffff',
+        textDecoration: 'none',
         filter: 'drop-shadow(0 9px 0 #000000)',
       }}
     >
@@ -40,8 +44,8 @@ function PortfolioCard({ title, description, image }) {
           {description}
         </p>
       </div>
-    </article>
+    </Link>
   )
 }
 
-export default PortfolioCard
+export default AboutChoiceCard

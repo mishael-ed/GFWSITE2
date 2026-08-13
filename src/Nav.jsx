@@ -11,7 +11,7 @@ function Nav() {
 
           <div style={{ display: 'flex', gap: '60px' }}>
             <Link to="/" className="nav-link" style={{ textDecoration: 'none', fontSize: '50px' }}>Home</Link>
-            <Link to="/about" className="nav-link" style={{ textDecoration: 'none', fontSize: '50px' }}>About</Link>
+            <Link to="/about" className="nav-link" style={{ textDecoration: 'none', fontSize: '50px' }}>About Us</Link>
             <Link to="/portfolio" className="nav-link" style={{ textDecoration: 'none', fontSize: '50px' }}>Portfolio</Link>
             <a href="#blogs" className="nav-link" style={{ textDecoration: 'none', fontSize: '50px' }}>Contact</a>
             <a href="#donate" className="nav-link" style={{ textDecoration: 'none', fontSize: '50px' }}>Blogs</a>
