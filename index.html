@@ -64,6 +64,18 @@
         overflow-x: hidden;
       }
 
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 20000;
+        height: env(safe-area-inset-top, 0px);
+        background: #FDF8DF;
+        pointer-events: none;
+      }
+
       *, *::before, *::after {
         box-sizing: border-box;
       }
@@ -1166,7 +1178,7 @@
         }
 
         .menu-open .header-logo {
-          filter: brightness(0) invert(1);
+          filter: none;
         }
 
         .menu-open .menu-toggle {
