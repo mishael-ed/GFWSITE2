@@ -52,7 +52,7 @@ function BlogsPage() {
           style={{
             width: '100%',
             height: '500px',
-            backgroundColor: '#242424',
+            backgroundColor: '#1C1C1C',
             WebkitMaskImage: `url(${safari})`,
             maskImage: `url(${safari})`,
             WebkitMaskSize: 'cover',

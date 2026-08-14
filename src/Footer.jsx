@@ -3,7 +3,7 @@ import logo from './assets/logo.png'
 function Footer() {
   return (
     <div>
-      <footer id="contact" className="site-footer" style={{ backgroundColor: '#242424', padding: '80px 0 40px' }}>
+      <footer id="contact" className="site-footer" style={{ backgroundColor: '#1C1C1C', padding: '80px 0 40px' }}>
         <div
           className="footer-grid"
           style={{

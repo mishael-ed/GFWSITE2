@@ -7,6 +7,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 import FreeformButton from './FreeformButton'
 import DoodleStat from './DoodleStat'
+import SponsorStrip from './SponsorStrip'
 
 function Home() {
   return (
@@ -43,7 +44,7 @@ function Home() {
         <div style={{ paddingBottom: '20px' }}></div>
       </div>
 
-      <div style={{ backgroundColor: '#242424' }}>
+      <div style={{ backgroundColor: '#1C1C1C' }}>
         <svg width="100%" height="60" viewBox="0 0 1000 60" preserveAspectRatio="none" style={{ display: 'block' }}>
           <path
             d="M0 0 L0 30 Q 50 60, 100 30 T 200 30 T 300 30 T 400 30 T 500 30 T 600 30 T 700 30 T 800 30 T 900 30 T 1000 30 L 1000 0 Z"
@@ -59,6 +60,8 @@ function Home() {
           <DoodleStat number="12,000+" label="STUDENTS REACHED" />
         </div>
       </div>
+
+      <SponsorStrip />
 
       <div
         style={{
@@ -139,7 +142,7 @@ function Home() {
           style={{
             width: '100%',
             height: '500px',
-            backgroundColor: '#242424',
+            backgroundColor: '#1C1C1C',
             WebkitMaskImage: `url(${safari})`,
             maskImage: `url(${safari})`,
             WebkitMaskSize: 'cover',
