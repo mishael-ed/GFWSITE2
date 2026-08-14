@@ -23,11 +23,13 @@ function PortfolioPage() {
             title="Nigerian Wildlife Awareness Campaign"
             description="Inspiring communities to protect Nigeria's wildlife and habitats."
             image="https://upload.wikimedia.org/wikipedia/commons/7/7b/Sumu_wildlife_park_3.jpg"
+            to="/portfolio/nigerian-wildlife-awareness-campaign"
           />
           <PortfolioCard
             title="Artivism for Conservation"
             description="Using art and storytelling to make conservation accessible."
             image="https://upload.wikimedia.org/wikipedia/commons/5/58/Elephant_mural_-_geograph.org.uk_-_7630225.jpg"
+            to="/portfolio/artivism-for-conservation"
           />
         </div>
 

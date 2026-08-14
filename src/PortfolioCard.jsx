@@ -1,6 +1,11 @@
-function PortfolioCard({ title, description, image }) {
+import { Link } from 'react-router-dom'
+
+function PortfolioCard({ title, description, image, to }) {
+  const Card = to ? Link : 'article'
+
   return (
-    <article
+    <Card
+      {...(to ? { to } : {})}
       className="portfolio-card feature-card"
       style={{
         position: 'relative',
@@ -8,6 +13,7 @@ function PortfolioCard({ title, description, image }) {
         width: 'min(680px, 100%)',
         height: '230px',
         color: '#ffffff',
+        textDecoration: 'none',
         filter: 'drop-shadow(0 9px 0 #000000)',
       }}
     >
@@ -41,7 +47,7 @@ function PortfolioCard({ title, description, image }) {
           {description}
         </p>
       </div>
-    </article>
+    </Card>
   )
 }
 

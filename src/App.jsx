@@ -9,6 +9,7 @@ import DirectorPage from './DirectorPage'
 import ContactPage from './ContactPage'
 import BlogsPage from './BlogsPage'
 import PortfolioPage from './PortfolioPage'
+import { WildlifeCampaignPage, ArtivismPage } from './PortfolioDetailPages'
 import CustomCursor from './CustomCursor'
 import SiteMotion from './SiteMotion'
 
@@ -28,6 +29,8 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/portfolio/nigerian-wildlife-awareness-campaign" element={<WildlifeCampaignPage />} />
+        <Route path="/portfolio/artivism-for-conservation" element={<ArtivismPage />} />
       </Routes>
     </>
   )
