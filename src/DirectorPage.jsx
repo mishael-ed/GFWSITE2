@@ -26,7 +26,7 @@ function DirectorPage() {
 
           <header style={{ borderBottom: '4px solid #000000', paddingBottom: '32px', marginBottom: '38px' }}>
             <p style={{ fontFamily: 'Modern Sans', color: '#F69524', fontWeight: 'bold', fontSize: '16px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px' }}>
-              Founder &amp; Director
+              Founder and Director
             </p>
             <h1 style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: 'clamp(64px, 10vw, 105px)', lineHeight: .88, margin: 0 }}>
               CHINEDU MOGBO

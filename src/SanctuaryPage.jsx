@@ -53,7 +53,7 @@ function SanctuaryPage() {
           Discover. Learn. Protect. Together, we can give wildlife a second chance.
         </p>
 
-        <h2 style={headingStyle}>Rescue &amp; Rehabilitation</h2>
+        <h2 style={headingStyle}>Rescue and Rehabilitation</h2>
         <p style={paragraphStyle}>
           Every rescued animal deserves a second chance.
         </p>

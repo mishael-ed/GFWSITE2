@@ -31,7 +31,7 @@ function LogoGroup({ hidden = false }) {
 function SponsorStrip() {
   return (
     <section className="sponsor-strip" aria-label="Our partners and sponsors">
-      <p className="sponsor-strip-label">Our partners &amp; sponsors</p>
+      <p className="sponsor-strip-label">Our partners and sponsors</p>
       <div className="sponsor-marquee">
         <div className="sponsor-track">
           <LogoGroup />

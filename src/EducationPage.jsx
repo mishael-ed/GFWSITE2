@@ -55,7 +55,7 @@ function EducationPage() {
           Wild Tales uses the power of storytelling to inspire a love for wildlife and the environment. Through creative writing, reading, and storytelling activities, participants explore the wonders of nature while developing their imagination, communication skills, and appreciation for conservation.
         </p>
 
-        <h2 style={headingStyle}>Research &amp; Conservation</h2>
+        <h2 style={headingStyle}>Research and Conservation</h2>
         <p style={paragraphStyle}>
           Supporting wildlife conservation through research, species monitoring, habitat protection, and evidence-based solutions that strengthen biodiversity conservation across Nigeria.
         </p>

@@ -20,7 +20,7 @@ const topics = [
     image: '/blog-images/conservation-education.jpg',
   },
   {
-    title: 'Community & Conservation',
+    title: 'Community and Conservation',
     description: 'How people and partnerships create lasting change.',
     image: '/blog-images/community-conservation.jpg',
   },

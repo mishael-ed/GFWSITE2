@@ -44,7 +44,7 @@ function InitiativesPage() {
 
         <h2 style={headingStyle}>Play4Pangolins</h2>
         <p style={paragraphStyle}>
-          A sports-based conservation initiative that uses the power of sports (football &amp; basketball) to raise awareness about pangolin conservation while encouraging teamwork, healthy living, and environmental stewardship.
+          A sports-based conservation initiative that uses the power of sports (football and basketball) to raise awareness about pangolin conservation while encouraging teamwork, healthy living, and environmental stewardship.
         </p>
 
         <h2 style={headingStyle}>Artivism for Conservation</h2>
@@ -62,7 +62,7 @@ function InitiativesPage() {
           Immersive learning experiences that connect children, students, educators, and families with wildlife through hands-on conservation education, school programmes, and outdoor experiences.
         </p>
 
-        <h2 style={headingStyle}>Wildlife Rescue &amp; Rehabilitation</h2>
+        <h2 style={headingStyle}>Wildlife Rescue and Rehabilitation</h2>
         <p style={paragraphStyle}>
           Our wildlife sanctuary provides rescue, rehabilitation, and lifelong care for animals in need while working to return suitable wildlife to their natural habitats whenever possible.
         </p>

@@ -92,7 +92,7 @@ export function ArtivismPage() {
       <ul style={listStyle}>
         <li><strong>Creative Advocacy</strong> – Using art, music, fashion, theatre, and storytelling to communicate conservation messages.</li>
         <li><strong>Environmental Action</strong> – Inspiring communities to reduce waste, embrace sustainability, and protect wildlife.</li>
-        <li><strong>Education &amp; Engagement</strong> – Creating interactive experiences that connect people of all ages with nature.</li>
+        <li><strong>Education and Engagement</strong> – Creating interactive experiences that connect people of all ages with nature.</li>
         <li><strong>Collaboration</strong> – Bringing together artists, schools, businesses, conservationists, and communities to create meaningful environmental impact.</li>
       </ul>
 
