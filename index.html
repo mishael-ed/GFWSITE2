@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FDF8DF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" type="image/png" href="/src/assets/bird%20in%20hand%20ring%20logo.png" />
     <title>Greenfingers Wildlife Initiative</title>
     <style>
@@ -53,6 +56,7 @@
 
       body {
         font-family: 'Rainbow Theory', sans-serif;
+        background: #FDF8DF;
         overflow-x: hidden;
       }
 
@@ -905,6 +909,7 @@
 
         .site-footer {
           padding: 58px 0 30px !important;
+          padding-bottom: calc(30px + env(safe-area-inset-bottom, 0px)) !important;
         }
 
         .footer-grid {
@@ -987,8 +992,8 @@
         }
 
         .sponsor-logo-group {
-          gap: 38px;
-          padding-right: 38px;
+          gap: 18px;
+          padding-right: 18px;
         }
 
         .sponsor-logo-item {
@@ -1023,6 +1028,17 @@
         .feature-card-content {
           padding: 23px !important;
         }
+
+        .sponsor-logo-group {
+          gap: 10px;
+          padding-right: 10px;
+        }
+
+        .sponsor-logo-item {
+          flex-basis: 126px;
+          width: 126px;
+          height: 80px;
+        }
       }
 
       @media (max-width: 760px) {
@@ -1054,8 +1070,8 @@
           justify-content: center;
           gap: var(--mobile-menu-gap);
           width: 100%;
-          min-height: 76px;
-          padding: 14px 16px;
+          min-height: calc(76px + env(safe-area-inset-top, 0px));
+          padding: calc(14px + env(safe-area-inset-top, 0px)) 16px 14px;
           background: #FDF8DF;
         }
 
@@ -1170,7 +1186,7 @@
           height: 100%;
           min-height: 100%;
           justify-content: center;
-          padding: 76px 24px 20px;
+          padding: calc(76px + env(safe-area-inset-top, 0px)) 24px calc(20px + env(safe-area-inset-bottom, 0px));
         }
 
         .nav-links {
