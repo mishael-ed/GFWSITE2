@@ -54,9 +54,13 @@
         height: 100%;
       }
 
+      html,
+      body {
+        background-color: #1C1C1C;
+      }
+
       body {
         font-family: 'Rainbow Theory', sans-serif;
-        background: #FDF8DF;
         overflow-x: hidden;
       }
 
@@ -1203,16 +1207,17 @@
         .nav-link {
           width: 100%;
           padding: 8px 0;
-          color: #ffffff;
+          color: #F69524;
           font-size: clamp(32px, 10vw, 43px) !important;
           line-height: 1;
+          transform: translateX(-10px);
           -webkit-tap-highlight-color: transparent;
         }
 
         .nav-link:hover,
         .nav-link:focus-visible {
-          color: #ffffff;
-          transform: translateX(7px);
+          color: #F69524;
+          transform: translateX(-14px);
         }
 
         .nav-link:focus-visible {

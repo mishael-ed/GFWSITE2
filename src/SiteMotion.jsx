@@ -16,6 +16,23 @@ function SiteMotion() {
   const location = useLocation()
 
   useEffect(() => {
+    const themeMeta = document.querySelector('meta[name="theme-color"]')
+    const footer = document.querySelector('.site-footer')
+    if (!themeMeta || !footer) return undefined
+
+    themeMeta.setAttribute('content', '#FDF8DF')
+    const footerObserver = new IntersectionObserver(([entry]) => {
+      themeMeta.setAttribute('content', entry.isIntersecting ? '#1C1C1C' : '#FDF8DF')
+    }, { threshold: 0.01 })
+
+    footerObserver.observe(footer)
+    return () => {
+      footerObserver.disconnect()
+      themeMeta.setAttribute('content', '#FDF8DF')
+    }
+  }, [location.pathname])
+
+  useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
