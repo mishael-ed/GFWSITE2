@@ -1,74 +1,40 @@
-import Nav from './Nav'
-import Footer from './Footer'
+import SectionHubPage from './SectionHubPage'
 
-const headingStyle = {
-  fontFamily: 'Skreeble',
-  color: '#F69524',
-  margin: '50px 0 10px',
-}
-
-const paragraphStyle = {
-  fontFamily: 'Modern Sans',
-  color: '#000000',
-  fontWeight: 'bold',
-  fontSize: '17px',
-  lineHeight: '1.6',
-  margin: '16px 0',
-}
+const cards = [
+  {
+    title: 'Wildlife Warriors',
+    description: 'Helping young people become confident champions for nature.',
+    image: '/blog-images/conservation-education.jpg',
+    to: '/education/wildlife-warriors',
+  },
+  {
+    title: 'Nature School',
+    description: 'Immersive, hands-on learning in wildlife and natural ecosystems.',
+    image: '/blog-images/community-conservation.jpg',
+    to: '/education/nature-school',
+  },
+  {
+    title: 'Wild Tales and Comics',
+    description: 'Learning about conservation through stories, art, and imagination.',
+    image: '/blog-images/species-spotlight.jpg',
+    to: '/education/wild-tales',
+  },
+  {
+    title: 'Farm Tours',
+    description: 'Guided experiences connecting food, farming, wildlife, and sustainability.',
+    image: '/blog-images/wildlife-rescue.jpg',
+    to: '/education/farm-tours',
+  },
+]
 
 function EducationPage() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
-      <div style={{ flex: 1 }}>
-        <div style={{ paddingBottom: '20px' }}>
-          <Nav />
-        </div>
-
-        <div className="content-page" style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
-        <h1 className="content-page-title" style={{ fontFamily: 'Skreeble', color: '#F69524', fontSize: '80px', margin: 0 }}>EDUCATION</h1>
-
-        <p style={paragraphStyle}>
-          Inspiring the next generation of conservation leaders.
-        </p>
-        <p style={paragraphStyle}>
-          At Greenfingers Wildlife Initiative, we believe that education is one of the most powerful tools for protecting wildlife. Our educational programmes are designed to spark curiosity, build knowledge, and inspire meaningful action by connecting learners of all ages with the natural world.
-        </p>
-        <p style={paragraphStyle}>
-          Whether in classrooms, at our wildlife sanctuary, or through creative learning experiences, our programmes encourage participants to explore, discover, and become lifelong champions for wildlife conservation.
-        </p>
-        <p style={paragraphStyle}>
-          Discover our educational initiatives below.
-        </p>
-
-        <h2 style={headingStyle}>Wildlife Warriors Programme</h2>
-        <p style={paragraphStyle}>
-          The Wildlife Warriors Programme empowers children and young people to become ambassadors for nature through hands-on conservation activities, wildlife experiences, environmental leadership, and community action. Participants develop the knowledge, skills, and confidence to make a positive impact for wildlife.
-        </p>
-
-        <h2 style={headingStyle}>Nature School</h2>
-        <p style={paragraphStyle}>
-          Nature School transforms learning into an outdoor adventure by bringing students closer to wildlife and nature. Through interactive lessons, sanctuary visits, field experiences, and curriculum-aligned activities, learners gain a deeper understanding of biodiversity, ecosystems, and conservation.
-        </p>
-
-        <h2 style={headingStyle}>Wild Tales</h2>
-        <p style={paragraphStyle}>
-          Wild Tales uses the power of storytelling to inspire a love for wildlife and the environment. Through creative writing, reading, and storytelling activities, participants explore the wonders of nature while developing their imagination, communication skills, and appreciation for conservation.
-        </p>
-
-        <h2 style={headingStyle}>Research and Conservation</h2>
-        <p style={paragraphStyle}>
-          Supporting wildlife conservation through research, species monitoring, habitat protection, and evidence-based solutions that strengthen biodiversity conservation across Nigeria.
-        </p>
-
-        <h2 style={headingStyle}>Building a Generation That Cares</h2>
-        <p style={paragraphStyle}>
-          Every educational experience is designed to nurture curiosity, encourage critical thinking, and inspire action. By engaging children, students, educators, and families, we are helping build a future where people understand, value, and actively protect Nigeria's extraordinary wildlife and natural heritage.
-        </p>
-        </div>
-      </div>
-
-      <Footer />
-    </div>
+    <SectionHubPage
+      title="EDUCATION"
+      description="Choose a learning experience designed to spark curiosity, build knowledge, and inspire lifelong care for nature."
+      color="#F69524"
+      cards={cards}
+    />
   )
 }
 

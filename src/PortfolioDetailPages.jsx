@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Nav from './Nav'
 import Footer from './Footer'
 
@@ -26,6 +26,11 @@ const listStyle = {
 }
 
 function DetailLayout({ title, intro, children }) {
+  const location = useLocation()
+  const openedFromInitiatives = location.pathname.startsWith('/initiatives/')
+  const backTo = openedFromInitiatives ? '/initiatives' : '/portfolio'
+  const backLabel = openedFromInitiatives ? 'Explore Initiatives' : 'Explore Portfolio'
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
       <div style={{ flex: 1 }}>
@@ -34,8 +39,8 @@ function DetailLayout({ title, intro, children }) {
         </div>
 
         <main className="content-page" style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
-          <Link to="/portfolio" style={{ display: 'inline-block', fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '15px', textDecoration: 'none', marginBottom: '28px' }}>
-            ← Explore Portfolio
+          <Link to={backTo} style={{ display: 'inline-block', fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '15px', textDecoration: 'none', marginBottom: '28px' }}>
+            ← {backLabel}
           </Link>
           <h1 className="content-page-title portfolio-detail-title" style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: '72px', lineHeight: .95, margin: 0 }}>
             {title}
