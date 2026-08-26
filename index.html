@@ -8,6 +8,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" type="image/png" href="/src/assets/bird%20in%20hand%20ring%20logo.png" />
     <title>Greenfingers Wildlife Initiative</title>
+    <script>
+      const savedRoute = sessionStorage.getItem('spa-redirect')
+      if (savedRoute) {
+        sessionStorage.removeItem('spa-redirect')
+        const route = new URL(savedRoute)
+        window.history.replaceState(null, '', route.pathname + route.search + route.hash)
+      }
+    </script>
     <style>
       @font-face {
         font-family: 'Rainbow Theory';
