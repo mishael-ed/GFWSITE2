@@ -3,6 +3,8 @@ import Home from './Home'
 import SanctuaryPage from './SanctuaryPage'
 import InitiativesPage from './InitiativesPage'
 import EducationPage from './EducationPage'
+import EventsPage from './EventsPage'
+import EventsDetailPage from './EventsDetailPage'
 import AboutPage from './AboutPage'
 import AboutLandingPage from './AboutLandingPage'
 import DirectorPage from './DirectorPage'
@@ -38,6 +40,8 @@ function App() {
         <Route path="/education/nature-school" element={<NatureSchoolPage />} />
         <Route path="/education/wild-tales" element={<EducationWildTalesPage />} />
         <Route path="/education/farm-tours" element={<FarmToursPage />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/events/more-details" element={<EventsDetailPage />} />
         <Route path="/about" element={<AboutLandingPage />} />
         <Route path="/about/organization" element={<AboutPage />} />
         <Route path="/about/director" element={<DirectorPage />} />

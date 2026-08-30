@@ -137,6 +137,26 @@ function Home() {
           </div>
         </div>
 
+        <div className="home-feature home-feature-reverse" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '80px auto 40px' }}>
+          <div className="home-feature-image" style={{ border: '13px solid #B2D235', borderRadius: '4px 8px 3px 7px', flexShrink: 0, width: '270px', height: '270px', boxSizing: 'border-box' }}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Beach_Cleaning_Volunteers.jpg"
+              alt="Our Events"
+              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+
+          <div style={{ flex: 1 }}>
+            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble', color: '#B2D235', textAlign: 'left', margin: 0, fontSize: '60px' }}>OUR EVENTS</h1>
+
+            <p style={{ fontFamily: 'Modern Sans', color: '#000000', textAlign: 'left', margin: '20px 0 0', fontWeight: 'bold', fontSize: '17px', lineHeight: '1.4' }}>
+              Our events bring people together to learn, explore, and take action for wildlife. From exhibitions and festivals to beach clean-ups and conservation forums, there's a way for everyone to connect with nature all year round.
+            </p>
+
+            <FreeformButton color="#B2D235" to="/events">Learn more about our events</FreeformButton>
+          </div>
+        </div>
+
         <div
           className="safari-divider"
           style={{
