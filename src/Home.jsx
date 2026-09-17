@@ -87,9 +87,9 @@ function Home() {
 
           <div className="home-feature-image" style={{ border: '13px solid #F69524', borderRadius: '7px 3px 8px 4px', flexShrink: 0, width: '270px', height: '270px', boxSizing: 'border-box' }}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg"
+              src="/original%20images/homepage/sanctuary.jpg"
               alt="Sanctuary"
-              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
         </div>
@@ -97,9 +97,9 @@ function Home() {
         <div className="home-feature home-feature-reverse" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '80px auto 40px' }}>
           <div className="home-feature-image" style={{ border: '13px solid #B2D235', borderRadius: '4px 8px 3px 7px', flexShrink: 0, width: '300px', height: '300px', boxSizing: 'border-box' }}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/08/School_children_release_a_ringed_yellow-fronted_tinkerbird_Pogoniulus_chrysoconus_in_Wondo_Genet_Ethiopia_as_part_of_a_project_that_combines_citizen_science_with_long-term_wildlife_monitoring.jpg"
+              src="/original%20images/homepage/ourinitiatives.jpg"
               alt="Our Initiatives"
-              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
 
@@ -130,9 +130,9 @@ function Home() {
 
           <div className="home-feature-image" style={{ border: '13px solid #F69524', borderRadius: '7px 3px 8px 4px', flexShrink: 0, width: '290px', height: '290px', boxSizing: 'border-box' }}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Table_Rocks_Environmental_Education_%2822874305734%29.jpg"
+              src="/original%20images/homepage/education.jpg"
               alt="Education"
-              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
         </div>
@@ -140,9 +140,9 @@ function Home() {
         <div className="home-feature home-feature-reverse" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '80px auto 40px' }}>
           <div className="home-feature-image" style={{ border: '13px solid #B2D235', borderRadius: '4px 8px 3px 7px', flexShrink: 0, width: '270px', height: '270px', boxSizing: 'border-box' }}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Beach_Cleaning_Volunteers.jpg"
+              src="/original%20images/homepage/ourevents.jpg"
               alt="Our Events"
-              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
 
