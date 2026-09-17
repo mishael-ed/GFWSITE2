@@ -12,7 +12,7 @@ const paragraphStyle = {
 }
 
 const headingStyle = {
-  fontFamily: 'Skreeble',
+  fontFamily: 'Skreeble, "Rainbow Theory", sans-serif',
   color: '#009a2e',
   fontWeight: 'normal',
   fontSize: '40px',
@@ -42,7 +42,7 @@ function DetailLayout({ title, intro, children }) {
           <Link to={backTo} style={{ display: 'inline-block', fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '15px', textDecoration: 'none', marginBottom: '28px' }}>
             ← {backLabel}
           </Link>
-          <h1 className="content-page-title portfolio-detail-title" style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: '72px', lineHeight: .95, margin: 0 }}>
+          <h1 className="content-page-title portfolio-detail-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#009a2e', fontSize: '72px', lineHeight: .95, margin: 0 }}>
             {title}
           </h1>
           {intro && <p style={{ ...paragraphStyle, fontSize: '20px', color: '#F69524', margin: '25px 0 30px' }}>{intro}</p>}

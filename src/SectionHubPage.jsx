@@ -12,7 +12,7 @@ function SectionHubPage({ title, description, color, cards }) {
         </div>
 
         <header className="landing-header" style={{ maxWidth: '900px', margin: '0 auto', padding: '60px 30px 0', textAlign: 'center' }}>
-          <h1 style={{ fontFamily: 'Skreeble', color, fontSize: 'clamp(65px, 10vw, 105px)', lineHeight: .9, margin: 0 }}>{title}</h1>
+          <h1 style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color, fontSize: 'clamp(65px, 10vw, 105px)', lineHeight: .9, margin: 0 }}>{title}</h1>
           <p style={{ fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '17px', lineHeight: 1.5, margin: '24px auto 0', maxWidth: '650px' }}>
             {description}
           </p>

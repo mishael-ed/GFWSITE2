@@ -15,7 +15,7 @@ const paragraphStyle = {
 }
 
 const headingStyle = {
-  fontFamily: 'Skreeble',
+  fontFamily: 'Skreeble, "Rainbow Theory", sans-serif',
   color,
   fontWeight: 'normal',
   fontSize: '40px',
@@ -78,7 +78,7 @@ function EventsDetailPage() {
             ← Back to Events
           </Link>
 
-          <h1 style={{ fontFamily: 'Skreeble', color, fontSize: '72px', lineHeight: .95, margin: 0 }}>GREENFINGERS EVENTS</h1>
+          <h1 style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color, fontSize: '72px', lineHeight: .95, margin: 0 }}>GREENFINGERS EVENTS</h1>
           <p style={{ ...paragraphStyle, color: '#F69524', fontSize: '20px', margin: '25px 0 30px' }}>
             Connecting People, Wildlife and Nature Through Experiences
           </p>
@@ -113,7 +113,7 @@ function EventsDetailPage() {
             Explore our upcoming events, save the dates and join the movement to protect wildlife and wild spaces.
           </p>
 
-          <FreeformButton color={color} to="/events">View our calendar</FreeformButton>
+          <FreeformButton color={color} to="/events/calendar">View our calendar</FreeformButton>
         </main>
       </div>
 

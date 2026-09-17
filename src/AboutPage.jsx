@@ -3,7 +3,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 
 const headingStyle = {
-  fontFamily: 'Skreeble',
+  fontFamily: 'Skreeble, "Rainbow Theory", sans-serif',
   color: '#009a2e',
   margin: '50px 0 10px',
 }
@@ -27,7 +27,7 @@ function AboutPage() {
 
         <div className="content-page" style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 80px 140px' }}>
         <Link to="/about" style={{ display: 'inline-block', fontFamily: 'Modern Sans', color: '#000000', fontWeight: 'bold', fontSize: '15px', textDecoration: 'none', marginBottom: '28px' }}>← Explore About</Link>
-        <h1 className="content-page-title" style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: '80px', margin: 0 }}>ABOUT US</h1>
+        <h1 className="content-page-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#009a2e', fontSize: '80px', margin: 0 }}>ABOUT US</h1>
 
         <h2 style={headingStyle}>Background</h2>
 

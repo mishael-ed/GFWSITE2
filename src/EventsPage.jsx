@@ -5,6 +5,7 @@ const cards = [
     title: 'View Our Calendar',
     description: 'See what\'s coming up and save the dates for our next wildlife and conservation events.',
     image: '/blog-images/conservation-education.jpg',
+    to: '/events/calendar',
   },
   {
     title: 'More Details',

@@ -28,7 +28,7 @@ function DirectorPage() {
             <p style={{ fontFamily: 'Modern Sans', color: '#F69524', fontWeight: 'bold', fontSize: '16px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px' }}>
               Founder and Director
             </p>
-            <h1 style={{ fontFamily: 'Skreeble', color: '#009a2e', fontSize: 'clamp(64px, 10vw, 105px)', lineHeight: .88, margin: 0 }}>
+            <h1 style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#009a2e', fontSize: 'clamp(64px, 10vw, 105px)', lineHeight: .88, margin: 0 }}>
               CHINEDU MOGBO
             </h1>
             <p style={{ ...paragraphStyle, fontSize: '19px', margin: '20px 0 0' }}>
@@ -36,7 +36,7 @@ function DirectorPage() {
             </p>
           </header>
 
-          <blockquote className="director-quote" style={{ backgroundColor: '#1C1C1C', color: '#ffffff', fontFamily: 'Skreeble', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 1.25, margin: '0 0 42px', padding: '38px 42px', boxShadow: '0 9px 0 #F69524' }}>
+          <blockquote className="director-quote" style={{ backgroundColor: '#1C1C1C', color: '#ffffff', fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 1.25, margin: '0 0 42px', padding: '38px 42px', boxShadow: '0 9px 0 #F69524' }}>
             “My name means ‘God leads me’ in Igbo, my native language, and in many ways, it reflects the unexpected path that led me to conservation.”
           </blockquote>
 

@@ -38,7 +38,7 @@ function AboutChoiceCard({ title, description, image, to }) {
           boxSizing: 'border-box',
         }}
       >
-        <h2 className="feature-card-title" style={{ fontFamily: 'Skreeble', fontWeight: 'normal', fontSize: '45px', lineHeight: 1, margin: 0 }}>
+        <h2 className="feature-card-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontWeight: 'normal', fontSize: '45px', lineHeight: 1, margin: 0 }}>
           {title}
         </h2>
         <p className="feature-card-description" style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '16px', lineHeight: 1.5, maxWidth: '470px', margin: '15px 0 0' }}>

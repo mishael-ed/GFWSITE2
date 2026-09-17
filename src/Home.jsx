@@ -18,12 +18,12 @@ function Home() {
         <div className="home-hero" style={{ position: 'relative', maxWidth: '1300px', marginLeft: 'auto', marginRight: 'auto' }}>
           <Reveal>
             <div className="home-hero-title" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px', lineHeight: '0.75' }}>
-              <span className="hero-line hero-first-line" style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>
+              <span className="hero-line hero-first-line" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: '110px', color: '#009a2e' }}>
                 WELCOME TO
                 <img className="hero-decoration hero-star" src={star_shape} alt="" aria-hidden="true" />
               </span>
-              <span style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>GREENFINGERS WILDLIFE</span>
-              <span className="hero-line hero-last-line" style={{ fontFamily: 'Skreeble', fontSize: '110px', color: '#009a2e' }}>
+              <span style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: '110px', color: '#009a2e' }}>GREENFINGERS WILDLIFE</span>
+              <span className="hero-line hero-last-line" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: '110px', color: '#009a2e' }}>
                 INITIATIVE
                 <img className="hero-decoration hero-shell" src={shell} alt="" aria-hidden="true" />
               </span>
@@ -76,7 +76,7 @@ function Home() {
 
         <div className="home-feature" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '40px auto 0' }}>
           <div style={{ flex: 1 }}>
-            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble', color: '#F69524', textAlign: 'left', margin: 0, fontSize: '60px' }}>SANCTUARY</h1>
+            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#F69524', textAlign: 'left', margin: 0, fontSize: '60px' }}>SANCTUARY</h1>
 
             <p style={{ fontFamily: 'Modern Sans', color: '#000000', textAlign: 'left', margin: '20px 0 0', fontWeight: 'bold', fontSize: '17px', lineHeight: '1.4' }}>
               Welcome to Greenfingers Wildlife Sanctuary — a safe haven where rescued wildlife finds hope, healing, and a second chance.
@@ -104,7 +104,7 @@ function Home() {
           </div>
 
           <div style={{ flex: 1 }}>
-            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble', color: '#B2D235', textAlign: 'left', margin: 0, fontSize: '60px' }}>OUR INITIATIVES</h1>
+            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#B2D235', textAlign: 'left', margin: 0, fontSize: '60px' }}>OUR INITIATIVES</h1>
 
             <p style={{ fontFamily: 'Modern Sans', color: '#000000', textAlign: 'left', margin: '20px 0 0', fontWeight: 'bold', fontSize: '17px', lineHeight: '1.4' }}>
               At Greenfingers Wildlife Initiative, we believe conservation is most effective when it brings people together. Our initiatives are designed to educate, inspire, and empower individuals, schools, communities, businesses, and policymakers to take meaningful action for wildlife and the environment.
@@ -116,7 +116,7 @@ function Home() {
 
         <div className="home-feature" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '80px auto 40px' }}>
           <div style={{ flex: 1 }}>
-            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble', color: '#F69524', textAlign: 'left', margin: 0, fontSize: '60px' }}>EDUCATION</h1>
+            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#F69524', textAlign: 'left', margin: 0, fontSize: '60px' }}>EDUCATION</h1>
 
             <p style={{ fontFamily: 'Modern Sans', color: '#000000', textAlign: 'left', margin: '20px 0 0', fontWeight: 'bold', fontSize: '17px', lineHeight: '1.4' }}>
               Inspiring the next generation of conservation leaders.
@@ -147,7 +147,7 @@ function Home() {
           </div>
 
           <div style={{ flex: 1 }}>
-            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble', color: '#B2D235', textAlign: 'left', margin: 0, fontSize: '60px' }}>OUR EVENTS</h1>
+            <h1 className="home-feature-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#B2D235', textAlign: 'left', margin: 0, fontSize: '60px' }}>OUR EVENTS</h1>
 
             <p style={{ fontFamily: 'Modern Sans', color: '#000000', textAlign: 'left', margin: '20px 0 0', fontWeight: 'bold', fontSize: '17px', lineHeight: '1.4' }}>
               Our events bring people together to learn, explore, and take action for wildlife. From exhibitions and festivals to beach clean-ups and conservation forums, there's a way for everyone to connect with nature all year round.

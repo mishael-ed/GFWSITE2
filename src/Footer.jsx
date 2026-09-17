@@ -36,7 +36,7 @@ function Footer() {
           </p>
 
           <div className="footer-contact" style={{ textAlign: 'left' }}>
-            <h3 style={{ fontFamily: 'Skreeble', color: '#F69524', fontSize: '46px', fontWeight: 'normal', margin: '0 0 16px' }}>Visit Us</h3>
+            <h3 style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#F69524', fontSize: '46px', fontWeight: 'normal', margin: '0 0 16px' }}>Visit Us</h3>
 
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '14px', maxWidth: '300px' }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff" style={{ flexShrink: 0, marginTop: '3px' }}>

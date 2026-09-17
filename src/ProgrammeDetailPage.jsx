@@ -14,7 +14,7 @@ const paragraphStyle = {
 
 function ProgrammeDetailPage({ title, intro, image, color, backTo, backLabel, overview, audiences, experiences, availability, children, cta = 'Make an inquiry' }) {
   const headingStyle = {
-    fontFamily: 'Skreeble',
+    fontFamily: 'Skreeble, "Rainbow Theory", sans-serif',
     color,
     fontWeight: 'normal',
     fontSize: '40px',
@@ -32,7 +32,7 @@ function ProgrammeDetailPage({ title, intro, image, color, backTo, backLabel, ov
             ← {backLabel}
           </Link>
 
-          <h1 className="content-page-title programme-detail-title" style={{ fontFamily: 'Skreeble', color, fontSize: '72px', lineHeight: .95, margin: 0 }}>{title}</h1>
+          <h1 className="content-page-title programme-detail-title" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color, fontSize: '72px', lineHeight: .95, margin: 0 }}>{title}</h1>
           <p style={{ ...paragraphStyle, color: '#F69524', fontSize: '20px', margin: '25px 0 30px' }}>{intro}</p>
 
           {image && (
