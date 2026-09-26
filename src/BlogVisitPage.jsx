@@ -106,7 +106,7 @@ function BlogVisitPage() {
           </p>
 
           <FreeformButton color="#B2D235" href="https://youtu.be/crzhWm1aB-w?si=V1ForuSLju0QPF67">
-            WATCH THE VIDEO
+            Watch the video
           </FreeformButton>
         </main>
       </div>

@@ -40,9 +40,11 @@ function FreeformButton({ children, color = '#F69524', to, href }) {
   const style = {
     position: 'relative',
     display: 'inline-block',
-    fontFamily: 'Modern Sans',
+    fontFamily: "'Modern Sans', sans-serif",
     fontWeight: 'bold',
     fontSize: '16px',
+    letterSpacing: 'normal',
+    textTransform: 'none',
     color: '#000000',
     background: 'none',
     border: 'none',

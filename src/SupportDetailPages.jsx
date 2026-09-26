@@ -61,7 +61,7 @@ export function DonatePage() {
         'Your donation helps support the everyday work of wildlife conservation - from caring for rescued animals and providing food and veterinary care to supporting education, community outreach, habitat protection and conservation projects.',
         'Every contribution helps us continue giving wildlife a second chance while inspiring people to become better stewards of nature.',
       ]}
-      buttonLabel="DONATE NOW"
+      buttonLabel="Donate now"
       color="#B2D235"
     />
   )
@@ -76,7 +76,7 @@ export function MembershipPage() {
         'Become part of a growing community of people who care about wildlife and the environment. Greenfingers membership provides opportunities to participate in conservation activities, educational programmes, events and experiences throughout the year.',
         'Whether you are an individual, family, young person or wildlife enthusiast, there is a place for you in the Greenfingers community.',
       ]}
-      buttonLabel="BECOME A MEMBER"
+      buttonLabel="Become a member"
       color="#F69524"
     />
   )
@@ -92,7 +92,7 @@ export function InternationalDonationPage() {
         "Our international donation option makes it possible for friends, supporters, organisations and conservation partners around the world to contribute to Greenfingers' work.",
         "Your support can help us care for rescued wildlife, develop conservation education programmes, engage communities and advance projects protecting Nigeria's wildlife and natural habitats.",
       ]}
-      buttonLabel="DONATE INTERNATIONALLY"
+      buttonLabel="Donate internationally"
       color="#B2D235"
     />
   )
@@ -107,7 +107,7 @@ export function PatronPage() {
         'Becoming a Greenfingers Patron means making a deeper and more sustained commitment to wildlife conservation.',
         'Patrons help provide long-term support for our sanctuary, wildlife rehabilitation, education programmes and conservation initiatives. It is an opportunity to play a meaningful role in the continued growth of Greenfingers and the work we do for wildlife.',
       ]}
-      buttonLabel="BECOME A PATRON"
+      buttonLabel="Become a patron"
       color="#F69524"
     />
   )
@@ -123,7 +123,7 @@ export function BusinessPartnershipPage() {
         'We work with businesses and organisations on conservation campaigns, environmental activities, educational programmes, community initiatives, sponsorships, employee volunteering and corporate social responsibility projects.',
         'Whether you want to support a specific project or develop a long-term partnership, we would love to explore what we can achieve together.',
       ]}
-      buttonLabel="BECOME A BUSINESS PARTNER"
+      buttonLabel="Become a business partner"
       color="#B2D235"
     />
   )
