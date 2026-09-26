@@ -11,6 +11,7 @@ import AboutLandingPage from './AboutLandingPage'
 import DirectorPage from './DirectorPage'
 import ContactPage from './ContactPage'
 import BlogsPage from './BlogsPage'
+import BlogVisitPage from './BlogVisitPage'
 import PortfolioPage from './PortfolioPage'
 import SupportUsPage from './SupportUsPage'
 import { DonatePage, MembershipPage, InternationalDonationPage, PatronPage, BusinessPartnershipPage } from './SupportDetailPages'
@@ -51,6 +52,7 @@ function App() {
         <Route path="/about/director" element={<DirectorPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/blogs/uk-deputy-high-commissioner-visit" element={<BlogVisitPage />} />
         <Route path="/support-us" element={<SupportUsPage />} />
         <Route path="/support-us/donate" element={<DonatePage />} />
         <Route path="/support-us/member" element={<MembershipPage />} />

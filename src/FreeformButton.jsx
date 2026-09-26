@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function FreeformButton({ children, color = '#F69524', to }) {
+function FreeformButton({ children, color = '#F69524', to, href }) {
   const content = (
     <>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 'calc(100% + 8px)', overflow: 'hidden' }}>
@@ -49,6 +49,14 @@ function FreeformButton({ children, color = '#F69524', to }) {
     padding: '16px 34px',
     margin: '30px 0 8px 0',
     textDecoration: 'none',
+  }
+
+  if (href) {
+    return (
+      <a className="freeform-button" href={href} target="_blank" rel="noreferrer" style={style}>
+        {content}
+      </a>
+    )
   }
 
   if (to) {

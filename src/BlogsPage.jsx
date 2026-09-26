@@ -5,24 +5,10 @@ import PortfolioCard from './PortfolioCard'
 
 const topics = [
   {
-    title: 'Wildlife Rescue Stories',
-    description: 'Stories of rescue, recovery, and second chances.',
-    image: '/blog-images/wildlife-rescue.jpg',
-  },
-  {
-    title: 'Species Spotlight',
-    description: "Meet Nigeria's wildlife and learn why each species matters.",
-    image: '/blog-images/species-spotlight.jpg',
-  },
-  {
-    title: 'Conservation Education',
-    description: 'Ideas and experiences inspiring the next generation.',
-    image: '/blog-images/conservation-education.jpg',
-  },
-  {
-    title: 'Community and Conservation',
-    description: 'How people and partnerships create lasting change.',
-    image: '/blog-images/community-conservation.jpg',
+    title: 'A Visit to Greenfingers',
+    description: 'UK Deputy High Commissioner Visits the Greenfingers Wildlife Sanctuary',
+    image: '/original%20images/homepage/sanctuary.jpg',
+    to: '/blogs/uk-deputy-high-commissioner-visit',
   },
 ]
 
