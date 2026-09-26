@@ -12,6 +12,8 @@ import DirectorPage from './DirectorPage'
 import ContactPage from './ContactPage'
 import BlogsPage from './BlogsPage'
 import PortfolioPage from './PortfolioPage'
+import SupportUsPage from './SupportUsPage'
+import { DonatePage, MembershipPage, InternationalDonationPage, PatronPage, BusinessPartnershipPage } from './SupportDetailPages'
 import { WildlifeCampaignPage, ArtivismPage } from './PortfolioDetailPages'
 import { RescueRehabilitationPage, ResidentAnimalsPage, WildlifeReleasesPage, SanctuaryVolunteerPage } from './SanctuaryDetailPages'
 import { Play4PangolinsPage, InitiativeWildTalesPage } from './InitiativeDetailPages'
@@ -49,6 +51,12 @@ function App() {
         <Route path="/about/director" element={<DirectorPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/support-us" element={<SupportUsPage />} />
+        <Route path="/support-us/donate" element={<DonatePage />} />
+        <Route path="/support-us/member" element={<MembershipPage />} />
+        <Route path="/support-us/international-donation" element={<InternationalDonationPage />} />
+        <Route path="/support-us/patron" element={<PatronPage />} />
+        <Route path="/support-us/business-partnership" element={<BusinessPartnershipPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/portfolio/nigerian-wildlife-awareness-campaign" element={<WildlifeCampaignPage />} />
         <Route path="/portfolio/artivism-for-conservation" element={<ArtivismPage />} />

@@ -54,6 +54,7 @@ function Nav() {
               <Link to="/portfolio" className="nav-link" onClick={() => setMenuOpen(false)}>Portfolio</Link>
               <Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link>
               <Link to="/blogs" className="nav-link" onClick={() => setMenuOpen(false)}>Blogs</Link>
+              <Link to="/support-us" className="nav-link" onClick={() => setMenuOpen(false)}>Support Us</Link>
             </div>
 
             <svg className="nav-doodle nav-doodle-right" width="50" height="30" aria-hidden="true">
