@@ -789,7 +789,7 @@
         width: 32px;
         height: 32px;
         pointer-events: none;
-        z-index: 9999;
+        z-index: 30001;
         transform: translate(-50%, -50%) scale(1);
         transition: transform 0.2s ease;
         will-change: transform;
@@ -900,6 +900,143 @@
         transform: translateY(-10px) scale(1.035);
         outline: 3px solid #000000;
         outline-offset: 6px;
+      }
+
+      .blog-inspiration-layout {
+        display: flow-root;
+      }
+
+      .blog-connecting-layout {
+        display: flow-root;
+      }
+
+      .blog-connecting-image {
+        display: block;
+        float: right;
+        margin: 52px 0 24px 38px;
+      }
+
+      .blog-inline-image {
+        display: block;
+        float: left;
+        margin: 52px 38px 24px 0;
+      }
+
+      .blog-looking-ahead-layout {
+        display: flow-root;
+      }
+
+      .blog-portrait-image {
+        display: block;
+        float: right;
+        margin: 52px 0 24px 38px;
+      }
+
+      .blog-lightbox {
+        position: fixed;
+        inset: 0;
+        z-index: 20000;
+        display: grid;
+        grid-template-columns: 72px minmax(0, 1fr) 72px;
+        align-items: center;
+        gap: 22px;
+        padding: 72px 28px 34px;
+        background: rgba(28, 28, 28, .98);
+        box-sizing: border-box;
+      }
+
+      .blog-lightbox figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        min-width: 0;
+        min-height: 0;
+      }
+
+      .blog-lightbox figure img {
+        display: block;
+        max-width: 100%;
+        max-height: calc(100vh - 140px);
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border: 0;
+        box-sizing: border-box;
+      }
+
+      .blog-lightbox-image-shell {
+        position: relative;
+        display: inline-flex;
+        max-width: 100%;
+        max-height: calc(100vh - 140px);
+      }
+
+      .blog-lightbox figcaption {
+        margin-top: 14px;
+        color: #ffffff;
+        font-family: 'Modern Sans', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .blog-lightbox-close,
+      .blog-lightbox-control {
+        color: #ffffff;
+        background: transparent;
+        border: 0;
+        font-family: 'Rainbow Theory', sans-serif;
+        cursor: pointer;
+      }
+
+      .blog-lightbox-close {
+        position: absolute;
+        top: -42px;
+        right: 0;
+        z-index: 1;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        transition: transform .2s ease;
+      }
+
+      .blog-lightbox-close::before,
+      .blog-lightbox-close::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 3px;
+        border-radius: 999px;
+        background: #ffffff;
+        transform-origin: center;
+      }
+
+      .blog-lightbox-close::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      .blog-lightbox-close::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      .blog-lightbox-control {
+        padding: 10px;
+        font-size: 72px;
+        line-height: 1;
+        transition: transform .2s ease, color .2s ease;
+      }
+
+      .blog-lightbox-control:hover,
+      .blog-lightbox-close:hover {
+        color: #F69524;
+        transform: scale(1.08);
       }
 
       @media (max-width: 1200px) {
@@ -1458,6 +1595,52 @@
       }
 
       @media (max-width: 760px) {
+        .blog-inspiration-layout {
+          display: flow-root;
+        }
+
+        .blog-connecting-image {
+          float: none;
+          margin: 30px auto 24px !important;
+        }
+
+        .blog-inline-image {
+          float: none;
+          margin: 30px auto 24px !important;
+        }
+
+        .blog-looking-ahead-layout {
+          display: flow-root;
+        }
+
+        .blog-portrait-image {
+          float: none;
+          margin: 30px auto 24px !important;
+        }
+
+        .blog-lightbox {
+          grid-template-columns: 48px minmax(0, 1fr) 48px;
+          gap: 4px;
+          padding: 70px 10px 24px;
+        }
+
+        .blog-lightbox-control {
+          padding: 4px;
+          font-size: 54px;
+        }
+
+        .blog-lightbox-close {
+          top: -40px;
+          right: 0;
+          width: 36px;
+          height: 36px;
+        }
+
+        .blog-lightbox figure img {
+          max-height: calc(100vh - 125px);
+          border-width: 6px;
+        }
+
         .site-header {
           --mobile-menu-gap: clamp(40px, 32vw, 200px);
           position: relative;

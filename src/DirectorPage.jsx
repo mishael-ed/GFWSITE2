@@ -36,6 +36,25 @@ function DirectorPage() {
             </p>
           </header>
 
+          <div
+            className="director-hero-image"
+            style={{
+              width: '100%',
+              height: 'clamp(250px, 42vw, 400px)',
+              margin: '0 0 48px',
+              border: '13px solid #F69524',
+              borderRadius: '7px 3px 8px 4px',
+              boxSizing: 'border-box',
+              overflow: 'hidden',
+            }}
+          >
+            <img
+              src="/original%20images/about%20the%20director/director%20and%20the%20crow.jpg"
+              alt="Chinedu Mogbo with a rescued crow at Greenfingers Wildlife Sanctuary"
+              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+            />
+          </div>
+
           <blockquote className="director-quote" style={{ backgroundColor: '#1C1C1C', color: '#ffffff', fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 1.25, margin: '0 0 42px', padding: '38px 42px', boxShadow: '0 9px 0 #F69524' }}>
             “My name means ‘God leads me’ in Igbo, my native language, and in many ways, it reflects the unexpected path that led me to conservation.”
           </blockquote>

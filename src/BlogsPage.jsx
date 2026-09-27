@@ -5,9 +5,9 @@ import PortfolioCard from './PortfolioCard'
 
 const topics = [
   {
-    title: 'A Visit to Greenfingers',
+    title: 'UK VISITS GREENFINGERS',
     description: 'UK Deputy High Commissioner Visits the Greenfingers Wildlife Sanctuary',
-    image: '/original%20images/homepage/sanctuary.jpg',
+    image: '/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2838%29.jpg',
     to: '/blogs/uk-deputy-high-commissioner-visit',
   },
 ]
