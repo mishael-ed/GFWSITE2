@@ -10,6 +10,12 @@ const topics = [
     image: '/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2838%29.jpg',
     to: '/blogs/uk-deputy-high-commissioner-visit',
   },
+  {
+    title: 'SEA TURTLE STORIES',
+    description: 'Stories Through Young Eyes',
+    image: '/blog-images/Turtle%20Comic/Turtle%20pg%201.png',
+    to: '/blogs/sea-turtle-stories',
+  },
 ]
 
 function BlogsPage() {

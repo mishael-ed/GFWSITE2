@@ -12,7 +12,7 @@ const paragraphStyle = {
   margin: '18px 0',
 }
 
-function SupportDetailPage({ title, subtitle, paragraphs, buttonLabel, color = '#B2D235' }) {
+function SupportDetailPage({ title, subtitle, paragraphs, buttonLabel, color = '#B2D235', to = '/contact', href }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
       <div style={{ flex: 1 }}>
@@ -43,7 +43,7 @@ function SupportDetailPage({ title, subtitle, paragraphs, buttonLabel, color = '
 
           {paragraphs.map((paragraph) => <p key={paragraph} style={paragraphStyle}>{paragraph}</p>)}
 
-          <FreeformButton color={color} to="/contact">{buttonLabel}</FreeformButton>
+          <FreeformButton color={color} to={href ? undefined : to} href={href}>{buttonLabel}</FreeformButton>
         </main>
       </div>
 
@@ -94,6 +94,7 @@ export function InternationalDonationPage() {
       ]}
       buttonLabel="Donate internationally"
       color="#B2D235"
+      href="https://gofund.me/2bb8bd117"
     />
   )
 }
