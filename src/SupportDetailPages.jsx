@@ -77,6 +77,7 @@ export function MembershipPage() {
         'Whether you are an individual, family, young person or wildlife enthusiast, there is a place for you in the Greenfingers community.',
       ]}
       buttonLabel="Become a member"
+      href="https://forms.gle/UwYuTAWchibAuUsE9"
       color="#F69524"
     />
   )
