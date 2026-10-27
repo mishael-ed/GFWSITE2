@@ -101,6 +101,25 @@ export function WildlifeReleasesPage() {
   )
 }
 
+export function TurtleBaePage() {
+  return (
+    <ProgrammeDetailPage
+      {...common}
+      title="The Sanctuary At Turtle Bae"
+      intro="A coastal haven where sea turtles are protected and given a way back to the ocean."
+      image="/original%20images/hero%20slider/turtle-release.webp"
+      overview={[
+        'The Turtle Bae Sanctuary is Greenfingers’ coastal conservation site, dedicated to protecting sea turtles and the beaches they depend on. Working with coastal stakeholders, the team cares for turtles in need and returns them safely to the sea.',
+        'More than 70 sea turtles have been released over approximately three years, alongside beach clean-ups, nesting surveys, habitat protection, and community education that help local people become guardians of their coastline.',
+      ]}
+      audiences={['Coastal communities and local stakeholders', 'Schools, families, and visitors learning about sea turtles', 'Conservation partners, researchers, and volunteers']}
+      experiences={['Learning how sea turtles are rescued, cared for, and released', 'Beach clean-ups that protect nesting habitat', 'Nesting surveys and habitat protection work', 'Community education on living alongside marine wildlife']}
+      availability="Visits and activities at Turtle Bae are arranged in advance. Contact the team to ask about dates, group sizes, and what to expect."
+      cta="Plan a Turtle Bae visit"
+    />
+  )
+}
+
 export function SanctuaryVolunteerPage() {
   return (
     <ProgrammeDetailPage

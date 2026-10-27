@@ -17,7 +17,7 @@ import PortfolioPage from './PortfolioPage'
 import SupportUsPage from './SupportUsPage'
 import { DonatePage, MembershipPage, InternationalDonationPage, PatronPage, BusinessPartnershipPage } from './SupportDetailPages'
 import { WildlifeCampaignPage, ArtivismPage } from './PortfolioDetailPages'
-import { RescueRehabilitationPage, ResidentAnimalsPage, WildlifeReleasesPage, SanctuaryVolunteerPage } from './SanctuaryDetailPages'
+import { RescueRehabilitationPage, ResidentAnimalsPage, WildlifeReleasesPage, SanctuaryVolunteerPage, TurtleBaePage } from './SanctuaryDetailPages'
 import { Play4PangolinsPage, InitiativeWildTalesPage } from './InitiativeDetailPages'
 import { WildlifeWarriorsPage, NatureSchoolPage, EducationWildTalesPage, FarmToursPage } from './EducationDetailPages'
 import CustomCursor from './CustomCursor'
@@ -37,6 +37,7 @@ function App() {
         <Route path="/sanctuary/resident-animals" element={<ResidentAnimalsPage />} />
         <Route path="/sanctuary/releases" element={<WildlifeReleasesPage />} />
         <Route path="/sanctuary/volunteer" element={<SanctuaryVolunteerPage />} />
+        <Route path="/sanctuary/turtle-bae" element={<TurtleBaePage />} />
         <Route path="/initiatives" element={<InitiativesPage />} />
         <Route path="/initiatives/play4pangolins" element={<Play4PangolinsPage />} />
         <Route path="/initiatives/artivism-for-conservation" element={<ArtivismPage />} />

@@ -25,6 +25,12 @@ const cards = [
     image: '/blog-images/conservation-education.webp',
     to: '/sanctuary/volunteer',
   },
+  {
+    title: 'The Sanctuary At Turtle Bae',
+    description: 'Our coastal sanctuary protecting Nigeria’s sea turtles.',
+    image: '/original%20images/hero%20slider/turtle-release.webp',
+    to: '/sanctuary/turtle-bae',
+  },
 ]
 
 function SanctuaryPage() {
