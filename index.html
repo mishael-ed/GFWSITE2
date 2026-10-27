@@ -2181,6 +2181,25 @@
           animation: none;
         }
       }
+
+      .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        margin-top: 56px;
+      }
+
+      .footer-social a {
+        display: inline-flex;
+        padding: 6px;
+        transition: transform .25s cubic-bezier(.3, 1.6, .5, 1), opacity .2s ease;
+      }
+
+      .footer-social a:hover,
+      .footer-social a:focus-visible {
+        opacity: .75;
+        transform: translateY(-4px) scale(1.12);
+      }
     </style>
   </head>
   <body>
