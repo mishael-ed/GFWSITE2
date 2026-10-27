@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function AboutChoiceCard({ title, description, image, to }) {
+function AboutChoiceCard({ title, description, image, imagePosition = 'center', to }) {
   return (
     <Link
       to={to}
@@ -22,7 +22,7 @@ function AboutChoiceCard({ title, description, image, to }) {
           inset: 0,
           backgroundImage: `linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.52)), url(${image})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: imagePosition,
         }}
       />
 

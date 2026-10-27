@@ -28,7 +28,8 @@ function AboutLandingPage() {
           <AboutChoiceCard
             title="About the Director"
             description="Meet Chinedu Mogbo, founder and director of Greenfingers Wildlife Initiative."
-            image="https://upload.wikimedia.org/wikipedia/commons/1/1b/Table_Rocks_Environmental_Education_%2822874305734%29.jpg"
+            image="/original%20images/about%20the%20director/director%20and%20the%20crow.webp"
+            imagePosition="center 52%"
             to="/about/director"
           />
         </main>
