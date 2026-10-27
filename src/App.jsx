@@ -1,25 +1,39 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Home from './Home'
-import SanctuaryPage from './SanctuaryPage'
-import InitiativesPage from './InitiativesPage'
-import EducationPage from './EducationPage'
-import EventsPage from './EventsPage'
-import EventsDetailPage from './EventsDetailPage'
-import EventsCalendarPage from './EventsCalendarPage'
-import AboutPage from './AboutPage'
-import AboutLandingPage from './AboutLandingPage'
-import DirectorPage from './DirectorPage'
-import ContactPage from './ContactPage'
-import BlogsPage from './BlogsPage'
-import BlogVisitPage from './BlogVisitPage'
-import SeaTurtleStoriesPage from './SeaTurtleStoriesPage'
-import PortfolioPage from './PortfolioPage'
-import SupportUsPage from './SupportUsPage'
-import { DonatePage, MembershipPage, InternationalDonationPage, PatronPage, BusinessPartnershipPage } from './SupportDetailPages'
-import { WildlifeCampaignPage, ArtivismPage } from './PortfolioDetailPages'
-import { RescueRehabilitationPage, ResidentAnimalsPage, WildlifeReleasesPage, SanctuaryVolunteerPage, TurtleBaePage } from './SanctuaryDetailPages'
-import { Play4PangolinsPage, InitiativeWildTalesPage } from './InitiativeDetailPages'
-import { WildlifeWarriorsPage, NatureSchoolPage, EducationWildTalesPage, FarmToursPage } from './EducationDetailPages'
+const Home = lazy(() => import('./Home'))
+const SanctuaryPage = lazy(() => import('./SanctuaryPage'))
+const InitiativesPage = lazy(() => import('./InitiativesPage'))
+const EducationPage = lazy(() => import('./EducationPage'))
+const EventsPage = lazy(() => import('./EventsPage'))
+const EventsDetailPage = lazy(() => import('./EventsDetailPage'))
+const EventsCalendarPage = lazy(() => import('./EventsCalendarPage'))
+const AboutPage = lazy(() => import('./AboutPage'))
+const AboutLandingPage = lazy(() => import('./AboutLandingPage'))
+const DirectorPage = lazy(() => import('./DirectorPage'))
+const ContactPage = lazy(() => import('./ContactPage'))
+const BlogsPage = lazy(() => import('./BlogsPage'))
+const BlogVisitPage = lazy(() => import('./BlogVisitPage'))
+const SeaTurtleStoriesPage = lazy(() => import('./SeaTurtleStoriesPage'))
+const PortfolioPage = lazy(() => import('./PortfolioPage'))
+const SupportUsPage = lazy(() => import('./SupportUsPage'))
+const DonatePage = lazy(() => import('./SupportDetailPages').then((m) => ({ default: m.DonatePage })))
+const MembershipPage = lazy(() => import('./SupportDetailPages').then((m) => ({ default: m.MembershipPage })))
+const InternationalDonationPage = lazy(() => import('./SupportDetailPages').then((m) => ({ default: m.InternationalDonationPage })))
+const PatronPage = lazy(() => import('./SupportDetailPages').then((m) => ({ default: m.PatronPage })))
+const BusinessPartnershipPage = lazy(() => import('./SupportDetailPages').then((m) => ({ default: m.BusinessPartnershipPage })))
+const WildlifeCampaignPage = lazy(() => import('./PortfolioDetailPages').then((m) => ({ default: m.WildlifeCampaignPage })))
+const ArtivismPage = lazy(() => import('./PortfolioDetailPages').then((m) => ({ default: m.ArtivismPage })))
+const RescueRehabilitationPage = lazy(() => import('./SanctuaryDetailPages').then((m) => ({ default: m.RescueRehabilitationPage })))
+const ResidentAnimalsPage = lazy(() => import('./SanctuaryDetailPages').then((m) => ({ default: m.ResidentAnimalsPage })))
+const WildlifeReleasesPage = lazy(() => import('./SanctuaryDetailPages').then((m) => ({ default: m.WildlifeReleasesPage })))
+const SanctuaryVolunteerPage = lazy(() => import('./SanctuaryDetailPages').then((m) => ({ default: m.SanctuaryVolunteerPage })))
+const TurtleBaePage = lazy(() => import('./SanctuaryDetailPages').then((m) => ({ default: m.TurtleBaePage })))
+const Play4PangolinsPage = lazy(() => import('./InitiativeDetailPages').then((m) => ({ default: m.Play4PangolinsPage })))
+const InitiativeWildTalesPage = lazy(() => import('./InitiativeDetailPages').then((m) => ({ default: m.InitiativeWildTalesPage })))
+const WildlifeWarriorsPage = lazy(() => import('./EducationDetailPages').then((m) => ({ default: m.WildlifeWarriorsPage })))
+const NatureSchoolPage = lazy(() => import('./EducationDetailPages').then((m) => ({ default: m.NatureSchoolPage })))
+const EducationWildTalesPage = lazy(() => import('./EducationDetailPages').then((m) => ({ default: m.EducationWildTalesPage })))
+const FarmToursPage = lazy(() => import('./EducationDetailPages').then((m) => ({ default: m.FarmToursPage })))
 import CustomCursor from './CustomCursor'
 import SiteMotion from './SiteMotion'
 import ImageLightbox from './ImageLightbox'
@@ -30,6 +44,7 @@ function App() {
       <CustomCursor />
       <SiteMotion />
       <ImageLightbox />
+      <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sanctuary" element={<SanctuaryPage />} />
@@ -68,6 +83,7 @@ function App() {
         <Route path="/portfolio/nigerian-wildlife-awareness-campaign" element={<WildlifeCampaignPage />} />
         <Route path="/portfolio/artivism-for-conservation" element={<ArtivismPage />} />
       </Routes>
+      </Suspense>
     </>
   )
 }

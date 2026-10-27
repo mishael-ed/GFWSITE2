@@ -1,5 +1,5 @@
-import safari from './assets/abstracts/safari.png'
-import zebra_pattern from './assets/abstracts/zebra pattern.png'
+import safari from './assets/abstracts/safari.webp'
+import zebra_pattern from './assets/abstracts/zebra pattern.webp'
 import HeroSlider from './HeroSlider'
 import Nav from './Nav'
 import Footer from './Footer'

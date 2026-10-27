@@ -47,7 +47,7 @@ function Nav() {
 
             <div className="nav-links">
               <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
-              <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About Us</Link>
+              <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link>
               <Link to="/portfolio" className="nav-link" onClick={() => setMenuOpen(false)}>Portfolio</Link>
               <Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link>
               <Link to="/blogs" className="nav-link" onClick={() => setMenuOpen(false)}>Blogs</Link>

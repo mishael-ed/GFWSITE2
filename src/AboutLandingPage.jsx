@@ -1,4 +1,4 @@
-import safari from './assets/abstracts/safari.png'
+import safari from './assets/abstracts/safari.webp'
 import Nav from './Nav'
 import Footer from './Footer'
 import AboutChoiceCard from './AboutChoiceCard'

@@ -1,5 +1,5 @@
 const sponsorModules = import.meta.glob(
-  './assets/sponsor logos/*.{png,jpg,jpeg}',
+  './assets/sponsor logos/*.{png,jpg,jpeg,webp}',
   { eager: true, query: '?url', import: 'default' }
 )
 
