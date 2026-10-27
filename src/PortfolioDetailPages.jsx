@@ -20,6 +20,15 @@ const headingStyle = {
   margin: '48px 0 18px',
 }
 
+const subheadingStyle = {
+  fontFamily: 'Skreeble, "Rainbow Theory", sans-serif',
+  color: '#F69524',
+  fontWeight: 'normal',
+  fontSize: '30px',
+  lineHeight: 1.05,
+  margin: '34px 0 12px',
+}
+
 const listStyle = {
   ...paragraphStyle,
   paddingLeft: '24px',
@@ -55,12 +64,46 @@ function DetailLayout({ title, intro, children }) {
   )
 }
 
+const nwacPhotoPath = '/original%20images/nigerian-wildlife-awareness-campaign/'
+
+function CampaignPhoto({ file, alt, color = '#F69524', radius = '7px 3px 8px 4px', ratio = '3 / 2', rotate = 0, position = 'center', style }) {
+  return (
+    <figure
+      style={{
+        margin: 0,
+        border: `13px solid ${color}`,
+        borderRadius: radius,
+        boxSizing: 'border-box',
+        overflow: 'hidden',
+        aspectRatio: ratio,
+        transform: rotate ? `rotate(${rotate}deg)` : undefined,
+        backgroundColor: '#ffffff',
+        ...style,
+      }}
+    >
+      <img
+        src={`${nwacPhotoPath}${file}`}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: position }}
+      />
+    </figure>
+  )
+}
+
 export function WildlifeCampaignPage() {
   return (
     <DetailLayout
       title="Nigerian Wildlife Awareness Campaign"
       intro="Greenfingers Wildlife Initiative's flagship national campaign dedicated to inspiring a greater appreciation for Nigeria's remarkable wildlife and natural heritage."
     >
+      <CampaignPhoto
+        file="nwac-team-banner.webp"
+        alt="Players standing in front of the Nigerian Wildlife Awareness Campaign banner"
+        style={{ margin: '34px 0 30px' }}
+        position="center 40%"
+      />
       <p style={paragraphStyle}>
         Created in response to the growing threats facing biodiversity and the need for greater public awareness, the campaign brings together education, conservation, culture, sports, storytelling, and community action to inspire positive environmental change. By connecting people with nature through engaging experiences, NWAC encourages individuals, schools, businesses, and communities to become active participants in protecting Nigeria's wildlife.
       </p>
@@ -76,6 +119,60 @@ export function WildlifeCampaignPage() {
         <li><strong>Sports for Conservation</strong> – Harnessing the power of sport through initiatives like Play4Pangolins and the Race4Wildlife to inspire environmental stewardship.</li>
         <li><strong>Community Engagement</strong> – Working alongside communities to build a nationwide movement for wildlife conservation.</li>
       </ul>
+
+      <h2 style={headingStyle}>The Play4Pangolin Campaign</h2>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '34px', alignItems: 'center', margin: '10px 0 30px' }}>
+        <img
+          src={`${nwacPhotoPath}play4pangolin-logo.webp`}
+          alt="Play4Pangolins logo"
+          loading="lazy"
+          decoding="async"
+          style={{ display: 'block', width: '100%', maxWidth: '320px', height: 'auto', margin: '0 auto' }}
+        />
+        <div>
+          <h3 style={{ ...subheadingStyle, marginTop: 0 }}>What is Play4Pangolin?</h3>
+          <p style={paragraphStyle}>
+            Play4Pangolin is part of our #Sports4Wildlife campaign, which raises awareness through competitive sports.
+          </p>
+          <p style={paragraphStyle}>
+            In Nigeria, soccer is a unifying game among schools, teenagers, and adults, so we use it as a way to raise awareness about wildlife and inspire young people to take action for wildlife.
+          </p>
+        </div>
+      </div>
+
+      <CampaignPhoto
+        file="play4pangolin-header.webp"
+        alt="Two players challenge for a header during a Play4Pangolin match at a school pitch"
+        color="#B2D235"
+        radius="4px 8px 3px 7px"
+        style={{ margin: '34px 0' }}
+        position="center 35%"
+      />
+
+      <h3 style={subheadingStyle}>What is the purpose of the Play4Pangolin event?</h3>
+      <p style={paragraphStyle}>As part of our Wildlife Education Programmes, it:</p>
+      <ul style={listStyle}>
+        <li>Highlights endangered species within Nigeria.</li>
+        <li>Raises awareness about wildlife in Nigeria.</li>
+        <li>Involves teenagers in the cause of raising awareness for these species.</li>
+        <li>Inspires competitiveness in sports amongst teenagers.</li>
+      </ul>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '30px', margin: '44px 0 10px' }}>
+        <CampaignPhoto
+          file="play4pangolin-dribble.webp"
+          alt="Players race for the ball during a Play4Pangolin match"
+          rotate={-1.2}
+        />
+        <CampaignPhoto
+          file="play4pangolin-kick.webp"
+          alt="A player lines up a kick while schoolmates watch from the sideline"
+          color="#B2D235"
+          radius="4px 8px 3px 7px"
+          rotate={1.2}
+        />
+      </div>
     </DetailLayout>
   )
 }

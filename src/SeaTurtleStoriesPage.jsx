@@ -23,83 +23,83 @@ const headingStyle = {
 
 const comicPages = [
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%201.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%201.webp',
     alt: 'Sea Turtle Stories page 1',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%202.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%202.webp',
     alt: 'Sea Turtle Stories page 2',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%203.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%203.webp',
     alt: 'Sea Turtle Stories page 3',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%204.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%204.webp',
     alt: 'Sea Turtle Stories page 4',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%205.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%205.webp',
     alt: 'Sea Turtle Stories page 5',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%206.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%206.webp',
     alt: 'Sea Turtle Stories page 6',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%207.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%207.webp',
     alt: 'Sea Turtle Stories page 7',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%208.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%208.webp',
     alt: 'Sea Turtle Stories page 8',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%209.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%209.webp',
     alt: 'Sea Turtle Stories page 9',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2010.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2010.webp',
     alt: 'Sea Turtle Stories page 10',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2010%20(1).png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2010%20(1).webp',
     alt: 'Sea Turtle Stories page 10 alternate',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2011.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2011.webp',
     alt: 'Sea Turtle Stories page 11',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2012.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2012.webp',
     alt: 'Sea Turtle Stories page 12',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2013.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2013.webp',
     alt: 'Sea Turtle Stories page 13',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2014.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2014.webp',
     alt: 'Sea Turtle Stories page 14',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2015.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2015.webp',
     alt: 'Sea Turtle Stories page 15',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2016.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2016.webp',
     alt: 'Sea Turtle Stories page 16',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2017.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2017.webp',
     alt: 'Sea Turtle Stories page 17',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2018.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2018.webp',
     alt: 'Sea Turtle Stories page 18',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2019.png',
+    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2019.webp',
     alt: 'Sea Turtle Stories page 19',
   },
 ]
@@ -184,7 +184,7 @@ function SeaTurtleStoriesPage() {
                   event.currentTarget.style.boxShadow = 'none'
                 }}
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={page.src}
                   alt={page.alt}
                   style={{ display: 'block', width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}

@@ -1,8 +1,6 @@
-import star_shape from './assets/abstracts/star shape.png'
-import shell from './assets/abstracts/shell.png'
 import safari from './assets/abstracts/safari.png'
 import zebra_pattern from './assets/abstracts/zebra pattern.png'
-import Reveal from './Reveal'
+import HeroSlider from './HeroSlider'
 import Nav from './Nav'
 import Footer from './Footer'
 import FreeformButton from './FreeformButton'
@@ -15,43 +13,12 @@ function Home() {
       <div style={{ backgroundColor: '#FDF8DF' }}>
         <Nav />
 
-        <div className="home-hero" style={{ position: 'relative', maxWidth: '1300px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <Reveal>
-            <div className="home-hero-title" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px', lineHeight: '0.75' }}>
-              <span className="hero-line hero-first-line" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: '110px', color: '#009a2e' }}>
-                WELCOME TO
-                <img className="hero-decoration hero-star" src={star_shape} alt="" aria-hidden="true" />
-              </span>
-              <span style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: '110px', color: '#009a2e' }}>GREENFINGERS WILDLIFE</span>
-              <span className="hero-line hero-last-line" style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', fontSize: '110px', color: '#009a2e' }}>
-                INITIATIVE
-                <img className="hero-decoration hero-shell" src={shell} alt="" aria-hidden="true" />
-              </span>
-            </div>
-          </Reveal>
-        </div>
+        <div style={{ height: '20px' }} />
 
-        <Reveal>
-          <p className="home-intro" style={{ fontFamily: 'Modern Sans', color: '#000000', textAlign: 'center', marginTop: '30px', fontWeight: 'bold', fontSize: '17px', lineHeight: '1.4' }}>
-            Where passion meets purpose in
-            <br />
-            protecting Nigeria's extraordinary wildlife and natural heritage.
-            <br />
-            Nigeria's extraordinary wildlife and natural heritage
-          </p>
-        </Reveal>
-
-        <div style={{ paddingBottom: '20px' }}></div>
+        <HeroSlider />
       </div>
 
-      <div style={{ backgroundColor: '#1C1C1C' }}>
-        <svg width="100%" height="60" viewBox="0 0 1000 60" preserveAspectRatio="none" style={{ display: 'block' }}>
-          <path
-            d="M0 0 L0 30 Q 50 60, 100 30 T 200 30 T 300 30 T 400 30 T 500 30 T 600 30 T 700 30 T 800 30 T 900 30 T 1000 30 L 1000 0 Z"
-            fill="#FDF8DF"
-          />
-        </svg>
-
+      <div style={{ backgroundColor: '#B2D235' }}>
         <div className="stats-grid" style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexWrap: 'wrap', gap: '60px', maxWidth: '1300px', margin: '0 auto', padding: '20px 20px 40px' }}>
           <DoodleStat number="15" label="YEARS OF IMPACT" />
           <DoodleStat number="300+" label="VOLUNTEERS" />
@@ -86,8 +53,8 @@ function Home() {
           </div>
 
           <div className="home-feature-image" style={{ border: '13px solid #F69524', borderRadius: '7px 3px 8px 4px', flexShrink: 0, width: '270px', height: '270px', boxSizing: 'border-box' }}>
-            <img
-              src="/original%20images/homepage/sanctuary.jpg"
+            <img loading="lazy" decoding="async"
+              src="/original%20images/homepage/sanctuary.webp"
               alt="Sanctuary"
               style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
@@ -96,8 +63,8 @@ function Home() {
 
         <div className="home-feature home-feature-reverse" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '80px auto 40px' }}>
           <div className="home-feature-image" style={{ border: '13px solid #B2D235', borderRadius: '4px 8px 3px 7px', flexShrink: 0, width: '300px', height: '300px', boxSizing: 'border-box' }}>
-            <img
-              src="/original%20images/homepage/ourinitiatives.jpg"
+            <img loading="lazy" decoding="async"
+              src="/original%20images/homepage/ourinitiatives.webp"
               alt="Our Initiatives"
               style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
@@ -129,8 +96,8 @@ function Home() {
           </div>
 
           <div className="home-feature-image" style={{ border: '13px solid #F69524', borderRadius: '7px 3px 8px 4px', flexShrink: 0, width: '290px', height: '290px', boxSizing: 'border-box' }}>
-            <img
-              src="/original%20images/homepage/education.jpg"
+            <img loading="lazy" decoding="async"
+              src="/original%20images/homepage/education.webp"
               alt="Education"
               style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
@@ -139,8 +106,8 @@ function Home() {
 
         <div className="home-feature home-feature-reverse" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '80px auto 40px' }}>
           <div className="home-feature-image" style={{ border: '13px solid #B2D235', borderRadius: '4px 8px 3px 7px', flexShrink: 0, width: '270px', height: '270px', boxSizing: 'border-box' }}>
-            <img
-              src="/original%20images/homepage/ourevents.jpg"
+            <img loading="lazy" decoding="async"
+              src="/original%20images/homepage/ourevents.webp"
               alt="Our Events"
               style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />

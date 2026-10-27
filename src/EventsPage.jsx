@@ -4,13 +4,13 @@ const cards = [
   {
     title: 'View Our Calendar',
     description: 'See what\'s coming up and save the dates for our next wildlife and conservation events.',
-    image: '/blog-images/conservation-education.jpg',
+    image: '/blog-images/conservation-education.webp',
     to: '/events/calendar',
   },
   {
     title: 'More Details',
     description: 'Get the full picture on what to expect at a Greenfingers event and how to take part.',
-    image: '/blog-images/wildlife-rescue.jpg',
+    image: '/blog-images/wildlife-rescue.webp',
     to: '/events/more-details',
   },
 ]

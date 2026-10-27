@@ -4,25 +4,25 @@ const cards = [
   {
     title: 'Wildlife Warriors',
     description: 'Helping young people become confident champions for nature.',
-    image: '/blog-images/conservation-education.jpg',
+    image: '/blog-images/conservation-education.webp',
     to: '/education/wildlife-warriors',
   },
   {
     title: 'Nature School',
     description: 'Immersive, hands-on learning in wildlife and natural ecosystems.',
-    image: '/blog-images/community-conservation.jpg',
+    image: '/blog-images/community-conservation.webp',
     to: '/education/nature-school',
   },
   {
     title: 'Wild Tales and Comics',
     description: 'Learning about conservation through stories, art, and imagination.',
-    image: '/blog-images/species-spotlight.jpg',
+    image: '/blog-images/species-spotlight.webp',
     to: '/education/wild-tales',
   },
   {
     title: 'Farm Tours',
     description: 'Guided experiences connecting food, farming, wildlife, and sustainability.',
-    image: '/blog-images/wildlife-rescue.jpg',
+    image: '/blog-images/wildlife-rescue.webp',
     to: '/education/farm-tours',
   },
 ]

@@ -12,7 +12,7 @@ export function WildlifeWarriorsPage() {
       {...common}
       title="Wildlife Warriors"
       intro="Building a generation of confident conservation leaders."
-      image="/blog-images/conservation-education.jpg"
+      image="/blog-images/conservation-education.webp"
       overview={[
         'The Wildlife Warriors Programme empowers children and young people to become ambassadors for nature through practical conservation learning, wildlife experiences, leadership, and community action.',
         'Participants build the knowledge, skills, and confidence to recognise environmental challenges and take positive action at school, at home, and in their communities.',
@@ -31,7 +31,7 @@ export function NatureSchoolPage() {
       {...common}
       title="Nature School"
       intro="Learning becomes an outdoor adventure."
-      image="/blog-images/community-conservation.jpg"
+      image="/blog-images/community-conservation.webp"
       overview={[
         'Nature School brings learners closer to wildlife and the natural world through interactive lessons, sanctuary visits, outdoor observation, and curriculum-connected activities.',
         'The programme encourages curiosity and critical thinking while helping students understand biodiversity, ecosystems, animal welfare, and their own role in conservation.',
@@ -50,7 +50,7 @@ export function EducationWildTalesPage() {
       {...common}
       title="Wild Tales and Comics"
       intro="Imagination opens the door to wildlife conservation."
-      image="/blog-images/species-spotlight.jpg"
+      image="/blog-images/species-spotlight.webp"
       overview={[
         'Wild Tales and Comics combines reading, storytelling, creative writing, and illustration to help learners explore wildlife and environmental responsibility.',
         'Through characters and stories inspired by nature, participants strengthen communication and creative skills while building empathy for animals and ecosystems.',
@@ -69,7 +69,7 @@ export function FarmToursPage() {
       {...common}
       title="Farm Tours"
       intro="Discover the connections between food, land, wildlife, and people."
-      image="/blog-images/wildlife-rescue.jpg"
+      image="/blog-images/wildlife-rescue.webp"
       overview={[
         'Farm Tours are guided learning experiences that introduce participants to responsible land use, food production, sustainability, and the relationship between farms and surrounding ecosystems.',
         'The experience encourages learners to consider how everyday choices can support healthier communities and reduce pressure on wildlife and natural habitats.',

@@ -24,23 +24,23 @@ const headingStyle = {
 
 const galleryImages = [
   {
-    src: '/original%20images/blog%20images/everyone%20standing%20at%20the%20front%20.jpg',
+    src: '/original%20images/blog%20images/everyone%20standing%20at%20the%20front%20.webp',
     alt: "Greenfingers team members and guests standing together during the UK Deputy High Commissioner's visit",
   },
   {
-    src: '/original%20images/blog%20images/only%20the%20man%20in%20front%20of%20the%20logo.jpg',
+    src: '/original%20images/blog%20images/only%20the%20man%20in%20front%20of%20the%20logo.webp',
     alt: 'Mr. John Baxter standing in front of the Greenfingers recycled-material artwork',
   },
   {
-    src: '/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2856%29.jpg',
+    src: '/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2856%29.webp',
     alt: 'Greenfingers discussing conservation work with the UK Deputy High Commissioner',
   },
   {
-    src: '/original%20images/blog%20images/holding%20letters.jpg',
+    src: '/original%20images/blog%20images/holding%20letters.webp',
     alt: 'Greenfingers and guests holding conservation materials during the sanctuary visit',
   },
   {
-    src: '/original%20images/blog%20images/the%20man%20himselfs%20portrait.jpg',
+    src: '/original%20images/blog%20images/the%20man%20himselfs%20portrait.webp',
     alt: 'Mr. John Baxter during his visit to Greenfingers Wildlife Sanctuary',
   },
 ]
@@ -103,8 +103,8 @@ function BlogVisitPage() {
               cursor: 'zoom-in',
             }}
           >
-            <img
-              src="/original%20images/blog%20images/everyone%20standing%20at%20the%20front%20.jpg"
+            <img loading="lazy" decoding="async"
+              src="/original%20images/blog%20images/everyone%20standing%20at%20the%20front%20.webp"
               alt="Greenfingers team members and guests standing together during the UK Deputy High Commissioner's visit"
               style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
@@ -135,8 +135,8 @@ function BlogVisitPage() {
                 cursor: 'zoom-in',
               }}
             >
-              <img
-                src="/original%20images/blog%20images/only%20the%20man%20in%20front%20of%20the%20logo.jpg"
+              <img loading="lazy" decoding="async"
+                src="/original%20images/blog%20images/only%20the%20man%20in%20front%20of%20the%20logo.webp"
                 alt="Mr. John Baxter standing in front of the Greenfingers recycled-material artwork"
                 style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: '66% center' }}
               />
@@ -181,8 +181,8 @@ function BlogVisitPage() {
                 cursor: 'zoom-in',
               }}
             >
-              <img
-                src="/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2856%29.jpg"
+              <img loading="lazy" decoding="async"
+                src="/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2856%29.webp"
                 alt="Greenfingers discussing conservation work with the UK Deputy High Commissioner"
                 style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'right center' }}
               />
@@ -219,8 +219,8 @@ function BlogVisitPage() {
               cursor: 'zoom-in',
             }}
           >
-            <img
-              src="/original%20images/blog%20images/holding%20letters.jpg"
+            <img loading="lazy" decoding="async"
+              src="/original%20images/blog%20images/holding%20letters.webp"
               alt="Greenfingers and guests holding conservation materials during the sanctuary visit"
               style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
@@ -256,8 +256,8 @@ function BlogVisitPage() {
                 cursor: 'zoom-in',
               }}
             >
-              <img
-                src="/original%20images/blog%20images/the%20man%20himselfs%20portrait.jpg"
+              <img loading="lazy" decoding="async"
+                src="/original%20images/blog%20images/the%20man%20himselfs%20portrait.webp"
                 alt="Mr. John Baxter during his visit to Greenfingers Wildlife Sanctuary"
                 style={{ display: 'block', width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
               />

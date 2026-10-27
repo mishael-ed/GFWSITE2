@@ -28,31 +28,31 @@ function SupportUsPage() {
             <PortfolioCard
               title="DONATE"
               description="Make a direct contribution to wildlife rescue, care, and conservation."
-              image="/original%20images/homepage/sanctuary.jpg"
+              image="/original%20images/homepage/sanctuary.webp"
               to="/support-us/donate"
             />
             <PortfolioCard
               title="BECOME A MEMBER"
               description="Join our conservation community and help sustain the work."
-              image="/original%20images/homepage/ourevents.jpg"
+              image="/original%20images/homepage/ourevents.webp"
               to="/support-us/member"
             />
             <PortfolioCard
               title="INTERNATIONAL DONATION"
               description="Support Greenfingers and Nigeria's wildlife from anywhere in the world."
-              image="/original%20images/homepage/ourinitiatives.jpg"
+              image="/original%20images/homepage/ourinitiatives.webp"
               to="/support-us/international-donation"
             />
             <PortfolioCard
               title="BECOME A PATRON"
               description="Provide lasting support for our programmes and long-term impact."
-              image="/original%20images/homepage/education.jpg"
+              image="/original%20images/homepage/education.webp"
               to="/support-us/patron"
             />
             <PortfolioCard
               title="BUSINESS PARTNERSHIP"
               description="Partner with us to create meaningful conservation impact."
-              image="/original%20images/homepage/ourinitiatives.jpg"
+              image="/original%20images/homepage/ourinitiatives.webp"
               to="/support-us/business-partnership"
             />
           </div>

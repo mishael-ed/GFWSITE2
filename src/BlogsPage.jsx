@@ -7,13 +7,13 @@ const topics = [
   {
     title: 'UK VISITS GREENFINGERS',
     description: 'UK Deputy High Commissioner Visits the Greenfingers Wildlife Sanctuary',
-    image: '/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2838%29.jpg',
+    image: '/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2838%29.webp',
     to: '/blogs/uk-deputy-high-commissioner-visit',
   },
   {
     title: 'SEA TURTLE STORIES',
     description: 'Stories Through Young Eyes',
-    image: '/blog-images/Turtle%20Comic/Turtle%20pg%201.png',
+    image: '/blog-images/Turtle%20Comic/Turtle%20pg%201.webp',
     to: '/blogs/sea-turtle-stories',
   },
 ]

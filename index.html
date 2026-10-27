@@ -184,6 +184,178 @@
         transform: rotate(25deg);
       }
 
+      .hero-slider {
+        position: relative;
+        width: 100%;
+        height: clamp(500px, 74vh, 680px);
+        overflow: hidden;
+        background: #1C1C1C;
+        color: #ffffff;
+      }
+
+      .hero-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        visibility: hidden;
+      }
+
+      .hero-slide.is-active,
+      .hero-slide.is-prev,
+      .hero-slide.is-next {
+        visibility: visible;
+        transition: transform .85s cubic-bezier(.65, 0, .25, 1);
+      }
+
+      .hero-slide.is-active { transform: translateX(0); }
+      .hero-slide.is-prev { transform: translateX(-100%); }
+      .hero-slide.is-next { transform: translateX(100%); }
+
+      .hero-slide-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+        filter: brightness(.58) saturate(1.05);
+      }
+
+      .hero-slider-wave {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        display: block;
+        width: 100%;
+        height: 60px;
+        pointer-events: none;
+      }
+
+      .hero-slider-wave-top { top: -1px; }
+      .hero-slider-wave-bottom { bottom: -1px; }
+
+      .hero-slide::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse at center, rgba(0, 0, 0, .35) 0%, rgba(0, 0, 0, .1) 70%),
+          linear-gradient(180deg, rgba(10, 10, 10, .55) 0%, rgba(10, 10, 10, .45) 45%, rgba(10, 10, 10, .75) 100%);
+        pointer-events: none;
+      }
+
+      .hero-slide-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 960px;
+        padding: 30px 90px 60px;
+        text-align: center;
+        text-shadow: 0 2px 14px rgba(0, 0, 0, .55);
+      }
+
+      .hero-slide-eyebrow {
+        margin: 0 0 14px;
+        font-family: 'Modern Sans', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #F69524;
+      }
+
+      .hero-slide-title {
+        margin: 0;
+        font-family: Skreeble, 'Rainbow Theory', sans-serif;
+        font-size: clamp(46px, 7.5vw, 96px);
+        font-weight: normal;
+        line-height: .92;
+        color: #ffffff;
+      }
+
+      .hero-slide-welcome {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Skreeble, 'Rainbow Theory', sans-serif;
+        font-size: clamp(40px, 8vw, 100px);
+        line-height: .85;
+        color: #ffffff;
+      }
+
+      .hero-slide-welcome .hero-welcome-name {
+        color: #B2D235;
+      }
+
+      .hero-slide-text {
+        max-width: 640px;
+        margin: 26px 0 0;
+        font-family: 'Modern Sans', sans-serif;
+        font-size: clamp(16px, 1.7vw, 19px);
+        font-weight: bold;
+        line-height: 1.5;
+        color: #ffffff;
+      }
+
+      .hero-slide-content .freeform-button {
+        margin-top: 24px;
+        text-shadow: none;
+      }
+
+      .hero-slider-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        padding: 6px 14px;
+        font-family: 'Rainbow Theory', sans-serif;
+        font-size: 64px;
+        line-height: 1;
+        color: #ffffff;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        transform: translateY(-50%);
+        transition: color .2s ease, transform .2s ease;
+      }
+
+      .hero-slider-arrow:hover {
+        color: #F69524;
+        transform: translateY(-50%) scale(1.12);
+      }
+
+      .hero-slider-prev { left: 14px; }
+      .hero-slider-next { right: 14px; }
+
+      @media (max-width: 700px) {
+        .hero-slider {
+          height: clamp(520px, 82vh, 620px);
+        }
+
+        .hero-slide-content {
+          padding: 24px 22px 64px;
+        }
+
+        .hero-slider-arrow {
+          display: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .hero-slide.is-active,
+        .hero-slide.is-prev,
+        .hero-slide.is-next {
+          transition: none;
+        }
+      }
+
       .contact-page {
         min-height: 100vh;
         color: #000000;

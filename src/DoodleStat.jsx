@@ -34,11 +34,11 @@ function DoodleStat({ number, label, style }) {
 
   return (
     <div className="doodle-stat" ref={ref} style={{ textAlign: 'center', ...style }}>
-      <div className="doodle-stat-number" style={{ fontFamily: 'Rainbow Theory', fontSize: '60px', color: '#F69524' }}>
+      <div className="doodle-stat-number" style={{ fontFamily: 'Rainbow Theory', fontSize: '60px', color: '#1C1C1C' }}>
         {count.toLocaleString()}
         {suffix}
       </div>
-      <div style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '13px', color: '#ffffff', letterSpacing: '0.5px' }}>{label}</div>
+      <div style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '14px', color: '#1C1C1C', letterSpacing: '0.5px' }}>{label}</div>
     </div>
   )
 }

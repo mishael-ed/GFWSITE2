@@ -44,9 +44,6 @@ function Nav() {
       <nav id="main-navigation" className="site-nav" aria-label="Main navigation">
         <div className="site-nav-inner">
           <div className="site-nav-row">
-            <svg className="nav-doodle nav-doodle-left" width="50" height="30" aria-hidden="true">
-              <path d="M2 15 Q 15 2, 25 15 T 48 15" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" />
-            </svg>
 
             <div className="nav-links">
               <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
@@ -56,21 +53,7 @@ function Nav() {
               <Link to="/blogs" className="nav-link" onClick={() => setMenuOpen(false)}>Blogs</Link>
               <Link to="/support-us" className="nav-link" onClick={() => setMenuOpen(false)}>Support Us</Link>
             </div>
-
-            <svg className="nav-doodle nav-doodle-right" width="50" height="30" aria-hidden="true">
-              <path d="M2 15 Q 15 28, 25 15 T 48 15" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" />
-            </svg>
           </div>
-
-          <svg className="nav-underline" width="100%" height="20" viewBox="0 0 1000 20" preserveAspectRatio="none" aria-hidden="true">
-            <path
-              d="M0 10 Q 50 6, 100 10 T 200 10 T 300 10 T 400 10 T 500 10 T 600 10 T 700 10 T 800 10 T 900 10 T 1000 10"
-              stroke="currentColor"
-              strokeWidth="4"
-              fill="none"
-              strokeLinecap="round"
-            />
-          </svg>
         </div>
       </nav>
     </header>

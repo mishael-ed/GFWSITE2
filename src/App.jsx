@@ -22,12 +22,14 @@ import { Play4PangolinsPage, InitiativeWildTalesPage } from './InitiativeDetailP
 import { WildlifeWarriorsPage, NatureSchoolPage, EducationWildTalesPage, FarmToursPage } from './EducationDetailPages'
 import CustomCursor from './CustomCursor'
 import SiteMotion from './SiteMotion'
+import ImageLightbox from './ImageLightbox'
 
 function App() {
   return (
     <>
       <CustomCursor />
       <SiteMotion />
+      <ImageLightbox />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sanctuary" element={<SanctuaryPage />} />
