@@ -187,7 +187,7 @@
       .hero-slider {
         position: relative;
         width: 100%;
-        height: clamp(500px, 74vh, 680px);
+        height: clamp(580px, calc(100vh - 170px), 740px);
         overflow: hidden;
         background: #1C1C1C;
         color: #ffffff;
@@ -235,7 +235,6 @@
         pointer-events: none;
       }
 
-      .hero-slider-wave-top { top: -1px; }
       .hero-slider-wave-bottom { bottom: -1px; }
 
       .hero-slide::after {
@@ -256,7 +255,7 @@
         align-items: center;
         width: 100%;
         max-width: 960px;
-        padding: 30px 90px 60px;
+        padding: 40px 90px 96px;
         text-align: center;
         text-shadow: 0 2px 14px rgba(0, 0, 0, .55);
       }
@@ -274,7 +273,7 @@
       .hero-slide-title {
         margin: 0;
         font-family: Skreeble, 'Rainbow Theory', sans-serif;
-        font-size: clamp(46px, 7.5vw, 96px);
+        font-size: clamp(46px, min(7.5vw, 11vh), 96px);
         font-weight: normal;
         line-height: .92;
         color: #ffffff;
@@ -286,7 +285,7 @@
         flex-direction: column;
         align-items: center;
         font-family: Skreeble, 'Rainbow Theory', sans-serif;
-        font-size: clamp(40px, 8vw, 100px);
+        font-size: clamp(40px, min(8vw, 11.5vh), 100px);
         line-height: .85;
         color: #ffffff;
       }
@@ -297,7 +296,7 @@
 
       .hero-slide-text {
         max-width: 640px;
-        margin: 26px 0 0;
+        margin: 20px 0 0;
         font-family: 'Modern Sans', sans-serif;
         font-size: clamp(16px, 1.7vw, 19px);
         font-weight: bold;
@@ -340,7 +339,7 @@
         }
 
         .hero-slide-content {
-          padding: 24px 22px 64px;
+          padding: 24px 22px 92px;
         }
 
         .hero-slider-arrow {
@@ -1730,6 +1729,44 @@
 
         .sponsor-track {
           animation-duration: 34s;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .site-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+          padding: 16px clamp(28px, 4vw, 64px) 14px;
+        }
+
+        .mobile-header-row {
+          padding-inline: 0;
+          justify-content: flex-start;
+        }
+
+        .header-logo {
+          height: 60px;
+        }
+
+        .site-nav {
+          width: auto !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        .site-nav-inner,
+        .site-nav-row {
+          width: auto !important;
+        }
+
+        .nav-links {
+          gap: clamp(18px, 2.4vw, 46px) !important;
+        }
+
+        .nav-link {
+          font-size: clamp(26px, 2.9vw, 42px) !important;
         }
       }
 

@@ -177,9 +177,6 @@ function HeroSlider() {
         </div>
       ))}
 
-      <svg className="hero-slider-wave hero-slider-wave-top" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
-        <path d={`M0 0 L0 30 ${wavePath.slice(5)} L1000 0 Z`} fill="#FDF8DF" />
-      </svg>
       <svg className="hero-slider-wave hero-slider-wave-bottom" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
         <path d={`M0 60 L0 30 ${wavePath.slice(5)} L1000 60 Z`} fill="#B2D235" />
       </svg>

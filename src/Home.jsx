@@ -13,8 +13,6 @@ function Home() {
       <div style={{ backgroundColor: '#FDF8DF' }}>
         <Nav />
 
-        <div style={{ height: '20px' }} />
-
         <HeroSlider />
       </div>
 
