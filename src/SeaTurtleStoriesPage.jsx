@@ -176,6 +176,7 @@ function SeaTurtleStoriesPage() {
                   willChange: 'transform',
                 }}
                 onMouseEnter={(event) => {
+                  if (window.matchMedia('(hover: none)').matches) return
                   event.currentTarget.style.transform = 'scale(1.03)'
                   event.currentTarget.style.boxShadow = '0 14px 28px rgba(0, 0, 0, 0.18)'
                 }}

@@ -1,8 +1,8 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from './Nav'
 import Footer from './Footer'
 import FreeformButton from './FreeformButton'
-import PaystackDonateForm from './PaystackDonateForm'
 
 const paragraphStyle = {
   fontFamily: 'Modern Sans',
@@ -11,6 +11,48 @@ const paragraphStyle = {
   fontSize: '17px',
   lineHeight: 1.7,
   margin: '18px 0',
+}
+
+const bankAccounts = [
+  { bank: 'First Bank', number: '2033206750', name: 'Greenfingers Wildlife Initiative', color: '#009a2e' },
+  { bank: 'Zenith Bank', number: '1211591697', name: 'Greenfingers Wildlife Initiative', color: '#F69524' },
+]
+
+function BankCard({ account }) {
+  const [copied, setCopied] = useState(false)
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(account.number)
+    } catch {
+      const field = document.createElement('textarea')
+      field.value = account.number
+      document.body.appendChild(field)
+      field.select()
+      document.execCommand('copy')
+      field.remove()
+    }
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
+  return (
+    <div style={{ padding: '22px 24px', backgroundColor: '#ffffff', border: '3px solid #000000', borderRadius: '4px 8px 3px 7px', boxShadow: `6px 6px 0 ${account.color}` }}>
+      <p style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '15px', margin: 0, color: '#333333' }}>{account.bank}</p>
+      <button
+        type="button"
+        onClick={copy}
+        aria-label={`Copy ${account.bank} account number`}
+        style={{ display: 'block', padding: 0, margin: '6px 0 4px', border: 'none', background: 'none', cursor: 'pointer', fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '30px', letterSpacing: '.04em', color: '#000000', textAlign: 'left' }}
+      >
+        {account.number}
+      </button>
+      <span role="status" style={{ display: 'block', minHeight: '20px', marginBottom: '6px', fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '13px', color: copied ? '#009a2e' : '#555555' }}>
+        {copied ? 'Copied!' : 'Click number to copy'}
+      </span>
+      <p style={{ fontFamily: 'Modern Sans', fontWeight: 'bold', fontSize: '15px', margin: 0, color: '#000000' }}>{account.name}</p>
+    </div>
+  )
 }
 
 function SupportDetailPage({ title, subtitle, paragraphs, buttonLabel, color = '#B2D235', to = '/contact', href, children }) {
@@ -64,7 +106,13 @@ export function DonatePage() {
       ]}
       color="#B2D235"
     >
-      <PaystackDonateForm />
+      <h3 style={{ fontFamily: 'Skreeble, "Rainbow Theory", sans-serif', color: '#F69524', fontSize: 'clamp(30px, 5vw, 40px)', fontWeight: 'normal', lineHeight: 1, margin: '40px 0 10px' }}>
+        BANK TRANSFER
+      </h3>
+      <p style={{ ...paragraphStyle, margin: '0 0 22px' }}>Donate directly to either of our accounts below. Click an account number to copy it.</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '22px' }}>
+        {bankAccounts.map((account) => <BankCard key={account.bank} account={account} />)}
+      </div>
     </SupportDetailPage>
   )
 }

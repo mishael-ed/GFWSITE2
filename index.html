@@ -2205,6 +2205,24 @@
         transform: translateY(-4px) scale(1.12);
       }
     </style>
+    <script>
+      // Touch screens have no real hover, so a tap would leave hover effects stuck on.
+      if (window.matchMedia('(hover: none)').matches) {
+        var stripHover = function (rules) {
+          for (var i = rules.length - 1; i >= 0; i--) {
+            var rule = rules[i]
+            if (rule.cssRules && !rule.selectorText) { stripHover(rule.cssRules); continue }
+            if (!rule.selectorText || rule.selectorText.indexOf(':hover') === -1) continue
+            var kept = rule.selectorText.split(',').filter(function (s) { return s.indexOf(':hover') === -1 })
+            if (kept.length) rule.selectorText = kept.join(',')
+            else rule.parentRule ? rule.parentRule.deleteRule(i) : rule.parentStyleSheet.deleteRule(i)
+          }
+        }
+        for (var s = 0; s < document.styleSheets.length; s++) {
+          try { stripHover(document.styleSheets[s].cssRules) } catch (e) {}
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
