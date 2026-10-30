@@ -63,10 +63,6 @@ const comicPages = [
     alt: 'Sea Turtle Stories page 10',
   },
   {
-    src: '/blog-images/Turtle%20Comic/Turtle%20pg%2010%20(1).webp',
-    alt: 'Sea Turtle Stories page 10 alternate',
-  },
-  {
     src: '/blog-images/Turtle%20Comic/Turtle%20pg%2011.webp',
     alt: 'Sea Turtle Stories page 11',
   },
@@ -119,6 +115,10 @@ function SeaTurtleStoriesPage() {
 
     document.body.style.overflow = 'hidden'
     window.addEventListener('keydown', handleKeyDown)
+
+    ;[activeImage - 1, activeImage + 1].forEach((i) => {
+      new Image().src = comicPages[(i + comicPages.length) % comicPages.length].src
+    })
 
     return () => {
       document.body.style.overflow = previousOverflow
@@ -186,7 +186,7 @@ function SeaTurtleStoriesPage() {
                 }}
               >
                 <img loading="lazy" decoding="async"
-                  src={page.src}
+                  src={page.src.replace('/Turtle%20Comic/', '/Turtle%20Comic/thumbs/')}
                   alt={page.alt}
                   style={{ display: 'block', width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
                 />

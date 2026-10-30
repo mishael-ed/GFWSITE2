@@ -22,7 +22,7 @@ function AboutLandingPage() {
           <AboutChoiceCard
             title="About Us"
             description="Learn about our beginnings, our purpose, and the work we do to protect Nigeria's wildlife."
-            image="https://upload.wikimedia.org/wikipedia/commons/0/08/School_children_release_a_ringed_yellow-fronted_tinkerbird_Pogoniulus_chrysoconus_in_Wondo_Genet_Ethiopia_as_part_of_a_project_that_combines_citizen_science_with_long-term_wildlife_monitoring.jpg"
+            image="/original%20images/hero%20slider/world-animal-day.webp"
             to="/about/organization"
           />
           <AboutChoiceCard
