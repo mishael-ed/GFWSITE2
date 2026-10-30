@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Nav from './Nav'
 import Footer from './Footer'
 import FreeformButton from './FreeformButton'
+import PaystackDonateForm from './PaystackDonateForm'
 
 const paragraphStyle = {
   fontFamily: 'Modern Sans',
@@ -12,7 +13,7 @@ const paragraphStyle = {
   margin: '18px 0',
 }
 
-function SupportDetailPage({ title, subtitle, paragraphs, buttonLabel, color = '#B2D235', to = '/contact', href }) {
+function SupportDetailPage({ title, subtitle, paragraphs, buttonLabel, color = '#B2D235', to = '/contact', href, children }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
       <div style={{ flex: 1 }}>
@@ -43,7 +44,7 @@ function SupportDetailPage({ title, subtitle, paragraphs, buttonLabel, color = '
 
           {paragraphs.map((paragraph) => <p key={paragraph} style={paragraphStyle}>{paragraph}</p>)}
 
-          <FreeformButton color={color} to={href ? undefined : to} href={href}>{buttonLabel}</FreeformButton>
+          {children ?? <FreeformButton color={color} to={href ? undefined : to} href={href}>{buttonLabel}</FreeformButton>}
         </main>
       </div>
 
@@ -61,9 +62,10 @@ export function DonatePage() {
         'Your donation helps support the everyday work of wildlife conservation - from caring for rescued animals and providing food and veterinary care to supporting education, community outreach, habitat protection and conservation projects.',
         'Every contribution helps us continue giving wildlife a second chance while inspiring people to become better stewards of nature.',
       ]}
-      buttonLabel="Donate now"
       color="#B2D235"
-    />
+    >
+      <PaystackDonateForm />
+    </SupportDetailPage>
   )
 }
 

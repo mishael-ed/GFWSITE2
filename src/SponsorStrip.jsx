@@ -20,7 +20,7 @@ function LogoGroup({ hidden = false }) {
   return (
     <div className="sponsor-logo-group" aria-hidden={hidden || undefined}>
       {sponsors.map((sponsor, index) => (
-        <div className="sponsor-logo-item" key={`${sponsor.name}-${index}`}>
+        <div className={`sponsor-logo-item${/green action/i.test(sponsor.name) ? ' sponsor-logo-item-large' : ''}`} key={`${sponsor.name}-${index}`}>
           <img src={sponsor.src} alt={hidden ? '' : sponsor.name} loading="lazy" />
         </div>
       ))}
