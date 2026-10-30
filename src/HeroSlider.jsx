@@ -93,16 +93,17 @@ const wavePath = 'M0 30 Q 50 60, 100 30 T 200 30 T 300 30 T 400 30 T 500 30 T 60
 function HeroSlider() {
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
+  const [swiped, setSwiped] = useState(false)
   const sliderRef = useRef(null)
   const touch = useRef(null)
 
   const go = useCallback((index) => setActive((index + slides.length) % slides.length), [])
 
   useEffect(() => {
-    if (paused || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
+    if (paused || swiped || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
     const timer = setTimeout(() => setActive((index) => (index + 1) % slides.length), AUTOPLAY_MS)
     return () => clearTimeout(timer)
-  }, [active, paused])
+  }, [active, paused, swiped])
 
   const setDrag = (px) => sliderRef.current?.style.setProperty('--drag', `${px}px`)
 
@@ -123,6 +124,8 @@ function HeroSlider() {
       state.dragging = true
       sliderRef.current?.classList.add('is-dragging')
       setPaused(true)
+      // They've found the swipe, so stop auto-advancing for good.
+      setSwiped(true)
     }
     setDrag(dx)
   }
