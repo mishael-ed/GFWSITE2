@@ -26,7 +26,7 @@ function SupportUsPage() {
 
           <div className="card-list" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', padding: '55px 0 10px', width: '100%', boxSizing: 'border-box' }}>
             <PortfolioCard
-              title="DONATE"
+              title="DONATE ₦"
               description="Make a direct contribution to wildlife rescue, care, and conservation."
               image="/original%20images/homepage/sanctuary.webp"
               to="/support-us/donate"

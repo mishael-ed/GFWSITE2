@@ -38,6 +38,15 @@ function Home() {
           flex: 1,
         }}
       >
+        <nav
+          aria-label="Quick links"
+          style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', columnGap: '22px', rowGap: '0', maxWidth: '900px', margin: '0 auto', padding: '14px 20px 0' }}
+        >
+          <FreeformButton color="#B2D235" to="/events/calendar">View our calendar</FreeformButton>
+          <FreeformButton color="#F69524" to="/blogs">Read our blogs</FreeformButton>
+          <FreeformButton color="#B2D235" to="/sanctuary/volunteer">Volunteer</FreeformButton>
+          <FreeformButton color="#F69524" to="/support-us/donate">Donate</FreeformButton>
+        </nav>
 
         <div className="home-feature" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px', maxWidth: '800px', margin: '40px auto 0' }}>
           <div style={{ flex: 1 }}>
