@@ -93,7 +93,8 @@ const wavePath = 'M0 30 Q 50 60, 100 30 T 200 30 T 300 30 T 400 30 T 500 30 T 60
 function HeroSlider() {
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
-  const touchStart = useRef(null)
+  const sliderRef = useRef(null)
+  const touch = useRef(null)
 
   const go = useCallback((index) => setActive((index + slides.length) % slides.length), [])
 
@@ -103,15 +104,45 @@ function HeroSlider() {
     return () => clearTimeout(timer)
   }, [active, paused])
 
+  const setDrag = (px) => sliderRef.current?.style.setProperty('--drag', `${px}px`)
+
+  const onTouchStart = (event) => {
+    const { clientX, clientY } = event.touches[0]
+    touch.current = { x: clientX, y: clientY, dragging: false }
+  }
+
+  const onTouchMove = (event) => {
+    const state = touch.current
+    if (!state) return
+    const dx = event.touches[0].clientX - state.x
+    const dy = event.touches[0].clientY - state.y
+
+    if (!state.dragging) {
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return
+      if (Math.abs(dy) > Math.abs(dx)) { touch.current = null; return }
+      state.dragging = true
+      sliderRef.current?.classList.add('is-dragging')
+      setPaused(true)
+    }
+    setDrag(dx)
+  }
+
   const onTouchEnd = (event) => {
-    if (touchStart.current === null) return
-    const delta = event.changedTouches[0].clientX - touchStart.current
-    touchStart.current = null
-    if (Math.abs(delta) > 50) go(active + (delta > 0 ? -1 : 1))
+    const state = touch.current
+    touch.current = null
+    if (!state?.dragging) return
+
+    const delta = event.changedTouches[0].clientX - state.x
+    const width = sliderRef.current?.offsetWidth || 1
+    sliderRef.current?.classList.remove('is-dragging')
+    setDrag(0)
+    setPaused(false)
+    if (Math.abs(delta) > Math.min(80, width * 0.2)) go(active + (delta > 0 ? -1 : 1))
   }
 
   return (
     <section
+      ref={sliderRef}
       className="hero-slider"
       data-no-lightbox
       aria-roledescription="carousel"
@@ -120,8 +151,10 @@ function HeroSlider() {
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
-      onTouchStart={(event) => { touchStart.current = event.touches[0].clientX }}
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
+      onTouchCancel={onTouchEnd}
     >
       {slides.map((slide, index) => (
         <div

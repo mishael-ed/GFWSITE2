@@ -222,9 +222,15 @@
         transition: transform .85s cubic-bezier(.65, 0, .25, 1);
       }
 
-      .hero-slide.is-active { transform: translateX(0); }
-      .hero-slide.is-prev { transform: translateX(-100%); }
-      .hero-slide.is-next { transform: translateX(100%); }
+      .hero-slide.is-active { transform: translateX(var(--drag, 0px)); }
+      .hero-slide.is-prev { transform: translateX(calc(-100% + var(--drag, 0px))); }
+      .hero-slide.is-next { transform: translateX(calc(100% + var(--drag, 0px))); }
+
+      .hero-slider { touch-action: pan-y; }
+
+      .hero-slider.is-dragging .hero-slide {
+        transition: none !important;
+      }
 
       .hero-slide-image {
         position: absolute;
