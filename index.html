@@ -1909,7 +1909,11 @@
           inset: 0;
           z-index: 99;
           display: block;
-          background: #1C1C1C;
+          background-color: #1C1C1C;
+          background-image: linear-gradient(rgba(28, 28, 28, .975), rgba(28, 28, 28, .975)), url('/zebra-menu-bg.webp');
+          background-size: cover, cover;
+          background-position: center, center;
+          background-repeat: no-repeat, no-repeat;
           opacity: 1;
         }
 
@@ -1988,6 +1992,10 @@
           padding: 0 !important;
           color: #ffffff;
           background-color: #1C1C1C !important;
+          background-image: linear-gradient(rgba(28, 28, 28, .975), rgba(28, 28, 28, .975)), url('/zebra-menu-bg.webp') !important;
+          background-size: cover, cover !important;
+          background-position: center, center !important;
+          background-repeat: no-repeat, no-repeat !important;
           overflow-y: auto;
           opacity: 1 !important;
           isolation: isolate;
@@ -2007,7 +2015,7 @@
           left: 0;
           z-index: 101;
           width: 100%;
-          background: #1C1C1C;
+          background: transparent;
         }
 
         .menu-open .header-logo {
