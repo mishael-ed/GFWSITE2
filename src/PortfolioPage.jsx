@@ -31,6 +31,12 @@ function PortfolioPage() {
             image="/original%20images/hero%20slider/turtle-art-student.webp"
             to="/portfolio/artivism-for-conservation"
           />
+          <PortfolioCard
+            title="Sanctuary"
+            description="Welcome to Greenfingers Wildlife Sanctuary — a safe haven where rescued wildlife finds hope, healing, and a second chance."
+            image="/original%20images/homepage/sanctuary.webp"
+            to="/sanctuary"
+          />
         </div>
 
         <div
