@@ -14,6 +14,8 @@ const ContactPage = lazy(() => import('./ContactPage'))
 const BlogsPage = lazy(() => import('./BlogsPage'))
 const BlogVisitPage = lazy(() => import('./BlogVisitPage'))
 const SeaTurtleFestivalPage = lazy(() => import('./SeaTurtleFestivalPage'))
+const DynamicBlogPage = lazy(() => import('./DynamicBlogPage'))
+const AdminPage = lazy(() => import('./AdminPage'))
 const SeaTurtleStoriesPage = lazy(() => import('./SeaTurtleStoriesPage'))
 const PortfolioPage = lazy(() => import('./PortfolioPage'))
 const SupportUsPage = lazy(() => import('./SupportUsPage'))
@@ -75,6 +77,8 @@ function App() {
         <Route path="/blogs/uk-deputy-high-commissioner-visit" element={<BlogVisitPage />} />
         <Route path="/blogs/sea-turtle-festival" element={<SeaTurtleFestivalPage />} />
         <Route path="/blogs/sea-turtle-stories" element={<SeaTurtleStoriesPage />} />
+        <Route path="/blogs/:slug" element={<DynamicBlogPage />} />
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="/support-us" element={<SupportUsPage />} />
         <Route path="/support-us/donate" element={<DonatePage />} />
         <Route path="/support-us/member" element={<MembershipPage />} />

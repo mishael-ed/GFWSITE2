@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import safari from './assets/abstracts/safari.webp'
 import Nav from './Nav'
 import Footer from './Footer'
@@ -25,6 +26,18 @@ const topics = [
 ]
 
 function BlogsPage() {
+  const [published, setPublished] = useState([])
+
+  useEffect(() => {
+    fetch('/api/blogs')
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        if (!Array.isArray(data?.blogs)) return
+        setPublished(data.blogs.map((blog) => ({ title: blog.title.toUpperCase(), description: blog.description, image: blog.cover, to: `/blogs/${blog.slug}` })))
+      })
+      .catch(() => {})
+  }, [])
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', backgroundColor: '#FDF8DF', overflow: 'hidden' }}>
       <div style={{ flex: 1 }}>
@@ -40,8 +53,8 @@ function BlogsPage() {
         </header>
 
         <main className="card-list" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', padding: '55px 60px 140px', width: '100%' }}>
-          {topics.map((topic) => (
-            <PortfolioCard key={topic.title} {...topic} />
+          {[...topics, ...published].map((topic) => (
+            <PortfolioCard key={topic.to} {...topic} />
           ))}
         </main>
 

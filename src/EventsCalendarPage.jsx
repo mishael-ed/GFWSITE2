@@ -1,27 +1,24 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from './Nav'
 import Footer from './Footer'
 import FreeformButton from './FreeformButton'
+import { defaultEvents } from './calendarDefaults'
 
 const year = 2026
 const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
-const events = [
-  { month: 1, day: null, title: 'Play4Pangolins' },
-  { month: 8, day: 5, title: 'Community Beach Cleanup' },
-  { month: 8, day: 19, title: 'World Cleanup Day – Beach Cleanup Activity / Turtle Release' },
-  { month: 9, day: 3, title: 'Sea Turtle Festival' },
-  { month: 9, day: 10, title: 'Community Clean Up' },
-  { month: 10, day: 3, title: 'Sea Turtle Conservation Forum' },
-  { month: 10, day: 7, title: 'Race4Wildlife' },
-  { month: 10, day: 14, title: 'Greenfingers Wildlife Festival / Wildlife Sanctuary Open Day' },
-  { month: 11, day: 5, title: '1000 Hands Ocean Heroes Beach Cleanup' },
-]
-
 function EventsCalendarPage() {
   const [activeMonth, setActiveMonth] = useState(8)
+  const [events, setEvents] = useState(defaultEvents)
+
+  useEffect(() => {
+    fetch('/api/calendar')
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => { if (Array.isArray(data?.events)) setEvents(data.events) })
+      .catch(() => {})
+  }, [])
   const firstWeekday = new Date(year, activeMonth, 1).getDay()
   const daysInMonth = new Date(year, activeMonth + 1, 0).getDate()
   const monthEvents = events.filter((event) => event.month === activeMonth)
@@ -61,7 +58,7 @@ function EventsCalendarPage() {
           <h2 aria-live="polite">{monthNames[activeMonth]} {year}</h2>
 
           {undatedEvents.map((event) => (
-            <div className="calendar-undated-event" key={event.title}>
+            <div className="calendar-undated-event" key={`${event.title}-${event.month}`}>
               <strong>{event.title}</strong>
               <span>Date to be announced</span>
             </div>
@@ -77,8 +74,8 @@ function EventsCalendarPage() {
               return (
                 <div className={`calendar-day${cell.day ? '' : ' calendar-day-empty'}${dayEvents.length ? ' calendar-day-has-event' : ''}`} key={cell.key}>
                   {cell.day && <span className="calendar-date">{cell.day}</span>}
-                  {dayEvents.map((event) => (
-                    <span className="calendar-event-label" key={event.title}>{event.title}</span>
+                  {dayEvents.map((event, index) => (
+                    <span className="calendar-event-label" key={`${event.title}-${index}`}>{event.title}</span>
                   ))}
                 </div>
               )
@@ -89,8 +86,8 @@ function EventsCalendarPage() {
             <h3>Events this month</h3>
             {monthEvents.length ? (
               <ul>
-                {monthEvents.map((event) => (
-                  <li key={event.title}>
+                {monthEvents.map((event, index) => (
+                  <li key={`${event.title}-${index}`}>
                     <span>{event.day ? `${monthNames[activeMonth]} ${event.day}` : 'Date to be announced'}</span>
                     <strong>{event.title}</strong>
                   </li>
