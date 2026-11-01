@@ -5,6 +5,12 @@ import PortfolioCard from './PortfolioCard'
 
 const topics = [
   {
+    title: 'SEA TURTLE FESTIVAL',
+    description: 'A Day for the Sea Turtles at Turtle Bae',
+    image: '/original%20images/blog%20images/festival-turtle-pool.webp',
+    to: '/blogs/sea-turtle-festival',
+  },
+  {
     title: 'UK VISITS GREENFINGERS',
     description: 'UK Deputy High Commissioner Visits the Greenfingers Wildlife Sanctuary',
     image: '/original%20images/blog%20images/Greenfingers%20DBH%20Visit%20Pix%20J%20%2838%29.webp',

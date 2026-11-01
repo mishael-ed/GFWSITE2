@@ -13,6 +13,7 @@ const DirectorPage = lazy(() => import('./DirectorPage'))
 const ContactPage = lazy(() => import('./ContactPage'))
 const BlogsPage = lazy(() => import('./BlogsPage'))
 const BlogVisitPage = lazy(() => import('./BlogVisitPage'))
+const SeaTurtleFestivalPage = lazy(() => import('./SeaTurtleFestivalPage'))
 const SeaTurtleStoriesPage = lazy(() => import('./SeaTurtleStoriesPage'))
 const PortfolioPage = lazy(() => import('./PortfolioPage'))
 const SupportUsPage = lazy(() => import('./SupportUsPage'))
@@ -72,6 +73,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/blogs/uk-deputy-high-commissioner-visit" element={<BlogVisitPage />} />
+        <Route path="/blogs/sea-turtle-festival" element={<SeaTurtleFestivalPage />} />
         <Route path="/blogs/sea-turtle-stories" element={<SeaTurtleStoriesPage />} />
         <Route path="/support-us" element={<SupportUsPage />} />
         <Route path="/support-us/donate" element={<DonatePage />} />
